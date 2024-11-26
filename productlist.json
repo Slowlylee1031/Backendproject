@@ -1,0 +1,535 @@
+[
+    {
+        "name": "One-shoulder bubble-hem dress",
+        "price": 399,
+        "discount": 0,
+        "newItem": true,
+        "colorIcon":[
+            "/img/Product/One-shoulder-bubble-hem dress/icon/firstColor.png",
+            "/img/Product/One-shoulder-bubble-hem dress/icon/secondColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/One-shoulder-bubble-hem dress/color1/001.png",
+                    "/img/Product/One-shoulder-bubble-hem dress/color1/002.png",
+                    "/img/Product/One-shoulder-bubble-hem dress/color1/003.png",
+                    "/img/Product/One-shoulder-bubble-hem dress/color1/004.png",
+                    "/img/Product/One-shoulder-bubble-hem dress/color1/005.png",
+                    "/img/Product/One-shoulder-bubble-hem dress/color1/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/One-shoulder-bubble-hem dress/color2/001.png",
+                    "/img/Product/One-shoulder-bubble-hem dress/color2/002.png",
+                    "/img/Product/One-shoulder-bubble-hem dress/color2/003.png",
+                    "/img/Product/One-shoulder-bubble-hem dress/color2/004.png",
+                    "/img/Product/One-shoulder-bubble-hem dress/color2/005.png",
+                    "/img/Product/One-shoulder-bubble-hem dress/color2/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Short, fitted, one-shoulder dress in woven fabric with gathers at the top and one short balloon sleeve. Concealed zip at one side and a gently flared skirt with a bubble hem. Jersey lining.",
+        "length":"Length:Short sleeve",
+        "fit":"Fit: Slim fit",
+        "style" : "Style: Style Flared, One-shoulder",
+        "sleeveStyle" : "Sleeve Style: Balloon sleeve",
+        "color" : "Description: White, Solid colour"
+    },
+
+    {
+        "name": "Ruffled off-the-shoulder dress",
+        "price": 399,
+        "discount": 0,
+        "newItem": true,
+        "colorIcon":[
+            "/img/Product/Ruffled off-the-shoulder dress/icon/firstColor.png",
+            "/img/Product/Ruffled off-the-shoulder dress/icon/secondColor.png",
+            "/img/Product/Ruffled off-the-shoulder dress/icon/thirdColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Ruffled off-the-shoulder dress/color1/001.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color1/002.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color1/003.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color1/004.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color1/005.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color1/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Ruffled off-the-shoulder dress/color2/001.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color2/002.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color2/003.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color2/004.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color2/005.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color2/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Ruffled off-the-shoulder dress/color3/001.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color3/002.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color3/003.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color3/004.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color3/005.png",
+                    "/img/Product/Ruffled off-the-shoulder dress/color3/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Short, fitted, off-the-shoulder dress in woven fabric. Ruffles at top, smocked section at back, and a concealed zipper at one side with hook-and-eye fastening. Visible seams at front and back. Lined.",
+        "length":"Length:Short",
+        "fit":"Fit: Slim fit",
+        "style" : "Style: Bodycon, Off-the-shoulder, Smocked",
+        "sleeveStyle" : "Sleeve Style: Sleeveless",
+        "color" : "Description: Light pink/light beige/white, Floral"
+    },
+
+    {
+        "name": "Tie-belt shirt dress",
+        "price": 399,
+        "discount": 0,
+        "newItem": true,
+        "colorIcon":[
+            "/img/Product/Tie-belt shirt dress/icon/firstColor.png",
+            "/img/Product/Tie-belt shirt dress/icon/secondColor.png",
+            "/img/Product/Tie-belt shirt dress/icon/thirdColor.png",
+            "/img/Product/Tie-belt shirt dress/icon/forthColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Tie-belt shirt dress/color1/001.png",
+                    "/img/Product/Tie-belt shirt dress/color1/002.png",
+                    "/img/Product/Tie-belt shirt dress/color1/003.png",
+                    "/img/Product/Tie-belt shirt dress/color1/004.png",
+                    "/img/Product/Tie-belt shirt dress/color1/005.png",
+                    "/img/Product/Tie-belt shirt dress/color1/006.png"
+                ],
+
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Tie-belt shirt dress/color2/001.png",
+                    "/img/Product/Tie-belt shirt dress/color2/002.png",
+                    "/img/Product/Tie-belt shirt dress/color2/003.png",
+                    "/img/Product/Tie-belt shirt dress/color2/004.png",
+                    "/img/Product/Tie-belt shirt dress/color2/005.png",
+                    "/img/Product/Tie-belt shirt dress/color2/006.png"
+                ],
+
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Tie-belt shirt dress/color3/001.png",
+                    "/img/Product/Tie-belt shirt dress/color3/002.png",
+                    "/img/Product/Tie-belt shirt dress/color3/003.png",
+                    "/img/Product/Tie-belt shirt dress/color3/004.png",
+                    "/img/Product/Tie-belt shirt dress/color3/005.png",
+                    "/img/Product/Tie-belt shirt dress/color3/006.png"
+                ],
+
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "forthColor",
+                "image": [
+                    "/img/Product/Tie-belt shirt dress/4/001.png",
+                    "/img/Product/Tie-belt shirt dress/4/002.png",
+                    "/img/Product/Tie-belt shirt dress/4/003.png",
+                    "/img/Product/Tie-belt shirt dress/4/004.png",
+                    "/img/Product/Tie-belt shirt dress/4/005.png",
+                    "/img/Product/Tie-belt shirt dress/4/006.png"
+                ],
+
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Short, fitted, off-the-shoulder dress in woven fabric. Ruffles at top, smocked section at back, and a concealed zipper at one side with hook-and-eye fastening. Visible seams at front and back. Lined.",
+        "length":"Length:Short",
+        "fit":"Fit: Slim fit",
+        "style" : "Style: Bodycon, Off-the-shoulder, Smocked",
+        "sleeveStyle" : "Sleeve Style: Sleeveless",
+        "color" : "Description: Light pink/light beige/white, Floral"
+
+    },
+    {
+        "name": "Tapered-waist dress",
+        "price": 399,
+        "discount": 0,
+        "newItem": true,
+        "colorIcon":[
+            "/img/Product/Tapered-waist dress/icon/firstColor.png",
+            "/img/Product/Tapered-waist dress/icon/secondColor.png",
+            "/img/ProductT/Tapered-waist dress/icon/thirdColor.png"
+        ],
+
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Tapered-waist dress/color1/001.png",
+                    "/img/Product/Tapered-waist dress/color1/002.png",
+                    "/img/Product/Tapered-waist dress/color1/003.png",
+                    "/img/Product/Tapered-waist dress/color1/004.png",
+                    "/img/Product/Tapered-waist dress/color1/005.png",
+                    "/img/Product/Tapered-waist dress/color1/006.png"
+                ],
+
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Tapered-waist dress/color2/001.png",
+                    "/img/Product/Tapered-waist dress/color2/002.png",
+                    "/img/Product/Tapered-waist dress/color2/003.png",
+                    "/img/Product/Tapered-waist dress/color2/004.png",
+                    "/img/Product/Tapered-waist dress/color2/005.png",
+                    "/img/Product/Tapered-waist dress/color2/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Tapered-waist dress/color3/001.png",
+                    "/img/Product/Tapered-waist dress/color3/002.png",
+                    "/img/Product/Tapered-waist dress/color3/003.png",
+                    "/img/Product/Tapered-waist dress/color3/004.png",
+                    "/img/Product/Tapered-waist dress/color3/005.png",
+                    "/img/Product/Tapered-waist dress/color3/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Short dress in woven fabric with a round neckline, concealed zip at the back and short sleeves. Tapered waist with pleats that create gentle draping. Unlined.",
+        "length":"Length: Midi",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Round neck",
+        "sleeveStyle" : "Concept: Modern Classic",
+        "color" : "Description: Cream/Black striped"
+
+    },
+    {
+        "name": "Balloon-sleeved wrap dress",
+        "price": 399,
+        "discount": 0,
+        "newItem": false,
+        "colorIcon":[
+            "/img/Product/Balloon-sleeved wrap dress/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Balloon-sleeved wrap dress/color1/001.png",
+                    "/img/Product/Balloon-sleeved wrap dress/color1/002.png",
+                    "/img/Product/Balloon-sleeved wrap dress/color1/003.png",
+                    "/img/Product/Balloon-sleeved wrap dress/color1/004.png",
+                    "/img/Product/Balloon-sleeved wrap dress/color1/005.png",
+                    "/img/Product/Balloon-sleeved wrap dress/color1/006.png"
+                ],
+
+
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+
+        ],
+        "details":"Calf-length dress in woven fabric made from a viscose and cotton blend with a fitted bodice that has a V-shaped neckline and a wrapover front. Seam at the waist with pleats at the front, long balloon sleeves with narrow elastication at the cuffs, and a gently flared skirt. Unlined.",
+        "length":"Length: Long sleeve",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Wrapover",
+        "sleeveStyle" : "Sleeve Style: Sleeveless",
+        "color" : "Description: Black/Patterned"
+    },
+    {
+        "name": "Blazer wrap dress",
+        "price": 399,
+        "discount": 0,
+        "newItem": false,
+        "colorIcon":[
+            "/img/Product/Blazer wrap dress/icon/firstColor.png",
+            "/img/Product/Blazer wrap dress/icon/secondColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Blazer wrap dress/color1/001.png",
+                    "/img/Product/Blazer wrap dress/color1/002.png",
+                    "/img/Product/Blazer wrap dress/color1/003.png",
+                    "/img/Product/Blazer wrap dress/color1/004.png",
+                    "/img/Product/Blazer wrap dress/color1/005.png",
+                    "/img/Product/Blazer wrap dress/color1/006.png"
+                ],
+
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Blazer wrap dress/color2/001.png",
+                    "/img/Product/Blazer wrap dress/color2/002.png",
+                    "/img/Product/Blazer wrap dress/color2/003.png",
+                    "/img/Product/Blazer wrap dress/color2/004.png",
+                    "/img/Product/Blazer wrap dress/color2/005.png",
+                    "/img/Product/Blazer wrap dress/color2/006.png"
+                ],
+
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Short, sleeveless blazer dress in woven fabric made from a linen blend. Fitted, double-breasted style with peak lapels, shoulder pads, jetted front pockets with a flap and a detachable tie belt at the waist. Lined.",
+        "length":"Length: Short",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Blazer dress, Double-breasted",
+        "sleeveStyle" : "Sleeve Style: Sleeveless",
+        "color" : "Description: Light beige, Pinstriped"
+
+    },
+    {
+        "name": "Cold shoulder maxi dress",
+        "price": 399,
+        "discount": 0,
+        "newItem": false,
+        "colorIcon":[
+            "/img/Product/Cold shoulder maxi dress/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Cold shoulder maxi dress/color1/001.png",
+                    "/img/Product/Cold shoulder maxi dress/color1/002.png",
+                    "/img/Product/Cold shoulder maxi dress/color1/003.png",
+                    "/img/Product/Cold shoulder maxi dress/color1/004.png",
+                    "/img/Product/Cold shoulder maxi dress/color1/005.png",
+                    "/img/Product/Cold shoulder maxi dress/color1/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Long cold shoulder dress in sheer, woven fabric with narrow shoulder straps and a wide flounce at the top. Gathered seams for added width. Partly lined",
+        "length":"Length: Maxi",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Cold shoulder",
+        "sleeveStyle" : "Sleeve Style: Sleeveless",
+        "color" : "Description: Cerise"
+
+    },
+    {
+        "name": "Pleated blouse",
+        "price": 399,
+        "discount": 0,
+        "newItem": false,
+        "colorIcon":[
+            "/img/Product/Pleated blouse/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Pleated blouse/color1/001.png",
+                    "/img/Product/Pleated blouse/color1/002.png",
+                    "/img/Product/Pleated blouse/color1/003.png",
+                    "/img/Product/Pleated blouse/color1/004.png",
+                    "/img/Product/Pleated blouse/color1/005.png",
+                    "/img/Product/Pleated blouse/color1/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Blouse in a pleated weave with a round, drawstring neckline and a V-shaped opening at the front. Loose fit with dropped shoulders and long balloon sleeves with narrow elastication at the cuffs. Overlocked hem.",
+        "length":"Length: Long sleeve",
+        "fit":"Fit: Loose fit",
+        "style" : "Style: Round neck",
+        "sleeveStyle" : "Sleeve Style: Sleeveless",
+        "color" : "Description: White"
+
+    }
+]

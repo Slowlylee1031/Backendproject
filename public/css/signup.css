@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document */
+:root{
+	color:#4b0b07;
+}
+.container{
+	max-width:1000px;
+	margin: 0 auto;
+	padding-top:48px 0 48px 0;
+}
+
+form{
+	max-width:100%;
+	margin:40px 10px;
+	text-align: center;
+}
+
+label{
+	display:flex;
+	justify-content: center;
+	border-radius: 4px;
+	padding-right:12px;
+	padding-bottom: 12px;
+	font-size:20px;
+	font-weight: 600;
+}
+
+input{
+	height:40px;
+	width:75%;
+	border:2px solid #4b0b07;
+	font-size:20px;
+	border-radius: 4px;
+	padding:0 12px;
+	text-align: center;
+}
+
+h1{
+	font-size: 50px;
+	font-weight: 500;
+	margin-bottom: 68px;
+}
+
+fieldset{
+	margin-bottom: 42px;
+	text-align: inherit;
+
+}
+
+form a{
+	margin:0px 6px 0 6px;
+}
+
+button{
+	height:68px;
+	width:75%;
+	border-radius: 18px;
+	color:#FFF;
+	background-color: #4b0b07;
+	font-size:36px;
+	margin-top: 38px;
+}
+
+button:hover{
+	background-color: #FFF;
+	color:#4b0b07;
+}
+
+input[type="checkbox"]{
+	width:20px;
+	border-radius: 4px;
+	padding-right:12px;
+}
+
+.container p{
+	margin-bottom:12px;
+}
+
+i {
+	color:red;
+	padding-right:6px;
+}
+
+
+/*MediaQuery*/
+@media(max-width:768px){
+}
