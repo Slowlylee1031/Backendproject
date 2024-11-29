@@ -53,11 +53,11 @@
             }
         ],
         "details":"Short, fitted, one-shoulder dress in woven fabric with gathers at the top and one short balloon sleeve. Concealed zip at one side and a gently flared skirt with a bubble hem. Jersey lining.",
-        "length":"<stong>Length: </stong> Short sleeve",
-        "fit":"<stong>Fit: </stong> Slim fit",
-        "style" : "<stong>Style: </stong> Style Flared, One-shoulder",
-        "sleeveStyle" : "<stong>Sleeve Style:</stong>  Balloon sleeve",
-        "color" : "<stong>Description: </stong> White, Solid colour"
+        "length":"<strong>Length: </strong> Short sleeve",
+        "fit":"<strong>Fit: </strong> Slim fit",
+        "style" : "<strong>Style: </strong> Style Flared, One-shoulder",
+        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Balloon sleeve",
+        "color" : "<strong>Description: </strong> White, Solid colour"
     },
     {
         "name": "Ruffled off-the-shoulder dress",
@@ -135,11 +135,11 @@
             }
         ],
         "details":"Short, fitted, off-the-shoulder dress in woven fabric with ruffles at the top, a smocked section at the back and a concealed zip with hook-and-eye fastening at one side. Visible seams down the front and back. Lined.",
-        "length":"<stong>Length: </stong> Short sleeve",
-        "fit":"<stong>Fit: </stong> Slim fit",
-        "style" : "<stong>Style: </stong> Off-the-shoulder",
-        "sleeveStyle" : "<stong>Sleeve Style:</stong>  Balloon sleeve",
-        "color" : "<stong>Description: </stong> Light pink/Floral"
+        "length":"<strong>Length: </strong> Short sleeve",
+        "fit":"<strong>Fit: </strong> Slim fit",
+        "style" : "<strong>Style: </strong> Off-the-shoulder",
+        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Balloon sleeve",
+        "color" : "<strong>Description: </strong> Light pink/Floral"
     },
     {
         "name": "Tie-belt shirt dress",
@@ -239,11 +239,11 @@
             }
         ],
         "details":"Calf-length dress in woven fabric with a collar, buttons down the front and short raglan sleeves. Waist section with narrow elastication at the back, gathers at the front and back and a detachable tie belt.",
-        "length":"<stong>Length: </stong> Short sleeve",
-        "fit":"<stong>Fit: </stong> Regular fit",
-        "style" : "<stong>Style: </stong> Shirt dress",
-        "sleeveStyle" : "<stong>Sleeve Style:</stong>  Balloon sleeve",
-        "color" : "<stong>Description: </stong> Black/Patterned"
+        "length":"<strong>Length: </strong> Short sleeve",
+        "fit":"<strong>Fit: </strong> Regular fit",
+        "style" : "<strong>Style: </strong> Shirt dress",
+        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Balloon sleeve",
+        "color" : "<strong>Description: </strong> Black/Patterned"
     },
     {
         "name": "Tapered-waist dress",
@@ -321,11 +321,11 @@
             }
         ],
         "details":"Short dress in woven fabric with a round neckline, concealed zip at the back and short sleeves. Tapered waist with pleats that create gentle draping. Unlined.",
-        "length":"<stong>Length: </stong> Short sleeve",
-        "fit":"<stong>Fit: </stong> Regular fit",
-        "style" : "<stong>Style: </stong> Round neck",
-        "sleeveStyle" : "<stong>Sleeve Style:</stong>  Balloon sleeve",
-        "color" : "<stong>Description: </stong> Black/Floral"
+        "length":"<strong>Length: </strong> Short sleeve",
+        "fit":"<strong>Fit: </strong> Regular fit",
+        "style" : "<strong>Style: </strong> Round neck",
+        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Balloon sleeve",
+        "color" : "<strong>Description: </strong> Black/Floral"
     },
     {
         "name": "Balloon-sleeved wrap dress",
@@ -359,11 +359,11 @@
             }
         ],
         "details":"Calf-length dress in woven fabric made from a viscose and cotton blend with a fitted bodice that has a V-shaped neckline and a wrapover front. Seam at the waist with pleats at the front, long balloon sleeves with narrow elastication at the cuffs, and a gently flared skirt. Unlined.",
-        "length":"<stong>Length: </stong> Long sleeve",
-        "fit":"<stong>Fit: </stong> Regular fit",
-        "style" : "<stong>Style: </stong> Wrapover",
-        "sleeveStyle" : "<stong>Sleeve Style:</stong>  Balloon sleeve",
-        "color" : "<stong>Description: </stong> Black/Patterned"
+        "length":"<strong>Length: </strong> Long sleeve",
+        "fit":"<strong>Fit: </strong> Regular fit",
+        "style" : "<strong>Style: </strong> Wrapover",
+        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Balloon sleeve",
+        "color" : "<strong>Description: </strong> Black/Patterned"
     },
     {
         "name": "Blazer wrap dress",
@@ -419,11 +419,11 @@
             }
         ],
         "details":"Short, fitted, sleeveless blazer dress in woven fabric with a shawl collar. Wrapover front with draping at the waist, a concealed button at one side and wide ties at the other. Unlined.",
-        "length":"<stong>Length: </stong> Short",
-        "fit":"<stong>Fit: </stong> Slim fit",
-        "style" : "<stong>Style: </stong> Blazer dress, Draped, Wrapover",
-        "sleeveStyle" : "<stong>Sleeve Style:</stong>  Sleeveless",
-        "color" : "<stong>Description: </stong> White, Solid colour"
+        "length":"<strong>Length: </strong> Short",
+        "fit":"<strong>Fit: </strong> Slim fit",
+        "style" : "<strong>Style: </strong> Blazer dress, Draped, Wrapover",
+        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Sleeveless",
+        "color" : "<strong>Description: </strong> White, Solid colour"
     },
     {
         "name": "Cold shoulder maxi dress",
@@ -457,11 +457,11 @@
             }
         ],
         "details":"Long cold shoulder dress in sheer, woven fabric with narrow shoulder straps and a wide flounce at the top. Gathered seams for added width. Partly lined.",
-        "length":"<stong>Length: </stong> Maxi",
-        "fit":"<stong>Fit: </stong> Regular fit",
-        "style" : "<stong>Style: </stong> Cold shoulder",
-        "sleeveStyle" : "<stong>Sleeve Style:</stong>  Sleeveless",
-        "color" : "<stong>Description: </stong> Cerise, Solid colour"
+        "length":"<strong>Length: </strong> Maxi",
+        "fit":"<strong>Fit: </strong> Regular fit",
+        "style" : "<strong>Style: </strong> Cold shoulder",
+        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Sleeveless",
+        "color" : "<strong>Description: </strong> Cerise, Solid colour"
     },
     {
         "name": "Pleated blouse",
@@ -495,11 +495,11 @@
             }
         ],
         "details":"Blouse in a pleated weave with a round, drawstring neckline and a V-shaped opening at the front. Loose fit with dropped shoulders and long balloon sleeves with narrow elastication at the cuffs. Overlocked hem.",
-        "length":"<stong>Length: </stong> Regular length",
-        "fit":"<stong>Fit: </stong> Loose fit",
-        "style" : "<stong>Style: </stong> Keyhole cutout",
-        "sleeveStyle" : "<stong>Sleeve Style:</stong> Balloon sleeve",
-        "color" : "<stong>Description: </stong> White, Solid colour"
+        "length":"<strong>Length: </strong> Regular length",
+        "fit":"<strong>Fit: </strong> Loose fit",
+        "style" : "<strong>Style: </strong> Keyhole cutout",
+        "sleeveStyle" : "<strong>Sleeve Style:</strong> Balloon sleeve",
+        "color" : "<strong>Description: </strong> White, Solid colour"
     }
 
     
