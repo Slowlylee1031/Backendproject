@@ -70,12 +70,13 @@
                     <div class="title">
                         <h6>Description</h6>
                         <div class="arrow">
-                            <img src="img/local/arrow up.svg" class="close" alt="Close">
-                            <img src="img/local/arrow down.svg" alt="Open">  
-                        </div>
-                        <div id="description-open" class="open"></div>
+                            <img src="img/local/arrow up.svg" class="up" alt="Close">
+                            <img src="img/local/arrow down.svg" class="down" alt="Open">  
+                        </div> 
                     </div>
-                    
+                    <div class="open">
+                        <div id="description-open"></div>
+                    </div>
                 </div>
 
                 <!-- Material  -->
@@ -84,8 +85,8 @@
                     <div class="title">
                         <h6>Material</h6>
                         <div class="arrow">
-                            <img src="img//local/arrow up.svg" class="close" alt="Close">
-                            <img src="img/local/arrow down.svg" alt="Open">
+                            <img src="img//local/arrow up.svg" class="up" alt="Close">
+                            <img src="img/local/arrow down.svg" class="down" alt="Open">
                         </div>
                     </div>
                     <div class="open">
@@ -131,8 +132,8 @@
                     <div class="title">
                         <h6>Care guid</h6>
                         <div class="arrow">
-                            <img src="img/local/arrow up.svg" class="close" alt="Close">
-                            <img src="img/local/arrow down.svg" alt="Open">
+                            <img src="img/local/arrow up.svg" class="up" alt="Close">
+                            <img src="img/local/arrow down.svg" class="down" alt="Open">
                         </div>
                     </div>
 
@@ -241,24 +242,21 @@
         $("#include-footer").load("inc_footer.html");
 
 
-        // $(".open").hide();
-    
+        $(".open").hide();
+
         let urlParams = new URLSearchParams(window.location.search)
-        console.log(urlParams.get('product'))
-        fetch('/products/'+ urlParams.get('product'))
+        fetch('/products/'+ urlParams.get('name'))
             .then(res => res.json())
             .then(data => {
-        
                 // get productInfo
                 let productInfo = `
                     <div class="title">
                         <h6>${data[0].name}</h6>
                         <h5>$${data[0].price}</h5>
-                        <h5></h5>
                     </div>
                 `
                 document.getElementById("productInfo").innerHTML = productInfo;
-
+           
                 // get color styles
                 let allColors = [];
 
@@ -281,38 +279,37 @@
                 let productDescription = [];
 
                 let Description =`
-                    <p>${data.details}</p>
-                    <p>${data.length}</p>
-                    <p>${data.fit}</p>
-                    <p>${data.style}</p>
-                    <p>${data.sleeveStyle}</p>
-                    <p>${data.color}</p>
+                    <p>${skuData.details}</p>
+                    <p>${skuData.length}</p>
+                    <p>${skuData.fit}</p>
+                    <p>${skuData.style}</p>
+                    <p>${skuData.sleeveStyle}</p>
+                    <p>${skuData.color}</p>
                     `
                 productDescription.push(Description);
 
                 document.getElementById("description-open").innerHTML = productDescription;
 
 
-                // $('.bxslider').bxSlider({
-                //     auto: true,
-                //     autoControls: true,
-                //     autoControls: true,
-                //     stopAutoOnClick: true,
-                //     pager: true,
-                //     adaptiveHeight: true,
-                //     slideWidth: 600,
-                // });
+                $('.bxslider').bxSlider({
+                    auto: true,
+                    autoControls: true,
+                    autoControls: true,
+                    stopAutoOnClick: true,
+                    pager: true,
+                    adaptiveHeight: true,
+                    slideWidth: 600,
+                });
                     
             })
-    //         $(".header .title").on("click", function() {
-	// 				$(this).siblings().slideToggle();
-	// 				// $(this).parent().siblings().children(".open").slideUp();
-	// 				$(this).find("arrow img").toggle();
-    //                 // $(this).parent().siblings().children().slideUp;
-    //         });	
-    //         $(".options button").on("click",function(){
-    //             $(this).toggleClass("open").siblings().removeClass("open");
-    //         });
+            $(".header .title").on("click", function() {
+					$(this).siblings().slideToggle();
+					$(this).parent().siblings().children(".open").slideUp();
+
+					$(this).find(".arrow img").toggle();
+					$(this).parent(). siblings().find(".arrow .up").hide();
+					$(this).parent(). siblings().find(".arrow .down").show();
+				});
 
     });
 
