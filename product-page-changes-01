@@ -1,0 +1,81 @@
+in product.css, rename ,close to .up
+
+in product.html, make changes marked with ****
+<!-- =================================Description ==================================== -->
+					<div class="header">
+						<div class="title">
+							<h6>Description</h6>
+							<div class="arrow">
+****								<img src="img/arrow up.svg" class="up" alt="Close">
+****								<img src="img/arrow down.svg" class="down" alt="Open">
+							</div>
+						</div>
+						<div class="open">
+						   ......
+						</div>
+					</div>
+					
+<!-- =================================Material ==================================== -->
+					<div class="header">
+						<div class="title">
+							<h6>Material</h6>
+							<div class="arrow">
+****								<img src="img/arrow up.svg" class="up" alt="Close">
+****								<img src="img/arrow down.svg" class="down" alt="Open">
+							</div>
+						</div>
+						<div class="open">
+						   ......
+						</div>
+					</div>
+<!-- =================================Care guid==================================== -->
+					<div class="header">
+						<div class="title">
+							<h6>Care guid</h6>
+							<div class="arrow">
+****								<img src="img/arrow up.svg" class="up" alt="Close">
+****								<img src="img/arrow down.svg" class="down" alt="Open">
+							</div>
+						</div>
+						<div class="open">
+						   ......
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div id="include-footer"></div>
+		<script>
+			$(document).ready(function() {
+				  $("#include-header").load("inc_header.html"); 
+				  $("#include-footer").load("inc_footer.html"); 
+				
+				$(".open").hide();
+				
+				......
+				
+				$(".header .title").on("click", function() {
+					$(this).siblings().slideToggle();
+					$(this).parent().siblings().children(".open").slideUp();
+
+****					$(this).find(".arrow img").toggle();
+****					$(this).parent(). siblings().find(".arrow .up").hide();
+****					$(this).parent(). siblings().find(".arrow .down").show();
+				});
+
+				$(".options button").on("click",function(){
+				   $(this).toggleClass("open").siblings().removeClass("open");
+				});
+				
+				$(".white").hide();
+				
+				$(".colors .whiteicon").on("click", function(){
+					$("#left .white").show();
+					$("#left .black").hide();
+					
+				})
+				
+			});
+		</script>
+	</body>
+</html>
