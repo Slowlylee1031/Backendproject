@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatti</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&display=swap"
+        rel="stylesheet">
+    <link href="css/header_footer.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="include-header"></div>
+
+    <main id="main">
+        <!-- MainBody Banner -->
+        <section class="banner">
+            <img src="img/local/banner.jpg" alt="banner">
+            <div class="container">
+                <div class="arrowl">
+                    <img class="inactive" src="img/local/Arrow L inactive.png" alt="">
+                    <img class="active" src="img/local/Arrow L active.png" alt="">
+                </div>
+                <div class="arrowr">
+                    <img class="inactive" src="img/local/Arrow R inactive.png" alt="">
+                    <img class="active" src="img/local/Arrow R.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="mainBody">
+
+            <div class="newDisplay">
+                <h1 class="title">New Arrivals</h1>
+                <div id="newItems" class="contentbox" style="background-color: aquamarine;"></div>
+            </div>
+
+            <div class="sellDisplay">
+                <h1 class="title">On Sale</h1>
+                <div id="discountItems" class="contentbox" style="background-color: aquamarine;"></div>
+            <div>
+
+        </section>
+
+        <!-- DressTips -->
+
+            <section id="tips">
+				<div class="title">
+					<h1>How to Dress</h1>
+					<h5>If you are short and Chubby</h5>
+				</div>
+
+				<div id="content">
+					<table>
+						<tbody>
+							<tr>
+								<td width="30%">
+									<h5 class="title">High turtle neck</h5>
+								</td>
+								<td width="4%">
+									<h1>VS</h1>
+								</td>
+								<td class="title" width="56%">
+									<h5>
+										Off-the-shoulder neck
+									</h5>
+								</td>
+							</tr>
+							<tr>
+								<td width="30%">
+									<p>can cover up your chest and divest attention away from your bust</p>
+								</td>
+								<td width="4%"></td>
+								<td width="76%">
+									<p>open up the space in front of your chest, and balance out your full figure.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<img src="img/local/Tips.png" alt="">
+				</div>
+			</section>
+
+            <!-- Footer -->
+            <div id="include-footer"></div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        // included Header and Footer
+        $("#include-header").load("inc_header.html");
+        $("#include-footer").load("inc_footer.html");
+    });
+    // fetch API
+    fetch('http://localhost:3001/products')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+
+            //decarled new arrival items and discount items
+            let newItems = [];
+            let discountItems = [];
+
+            // For New Items
+            for (let i = 0; i < data.length; i++) {
+                // console.log('data',data[i])
+
+                if (data[i].newItem === true) {
+                    console.log('new Item', data[i])
+                    let name = data[i].name;
+                    let main = data[i].sku[0].image[0];
+                    let hover = data[i].sku[0].image[4];
+                    let price = data[i].price;
+
+                    let msg = `
+                     <div class="item">
+                       <a href="/product.html?name=${name}/firstColor/">
+                                <div class="display">
+                                    <img class="main" src="${main}">
+                                    <img class="hover" src="${hover}">
+                                </div>
+                                <h3 class="name">${name}</h3>
+                                <h2 id="price">$${price}</h2>
+                        </a>
+                    </div>
+                    `
+                    newItems.push(msg)
+                }
+                document.getElementById("newItems").innerHTML = newItems.join(" ");
+            }
+
+            // For discount Items
+            for (let i = 0; i < data.length; i++) {
+                // console.log('data',data[i])
+
+                if (data[i].newItem === false) {
+                    console.log('discount Items', data[i])
+                    let name = data[i].name;
+                    let main = data[i].sku[0].image[0];
+                    let hover = data[i].sku[0].image[4];
+                    let price = data[i].price;
+                    let discount = data[i].discount;
+
+                    let disItems = `
+                        <div class="item">
+                       <a href="/product.html?name=${name}">
+                                <div class="display">
+                                    <img class="main" src="${main}">
+                                    <img class="hover" src="${hover}">
+                                </div>
+                                <h3 class="name">${name}</h3>
+                                <h2 id="price">$${price}</h2>
+                                <h2 id="discount">$${discount}</h2>
+                        </a>
+                    </div>
+                    `
+                    discountItems.push(disItems)
+                }
+                document.getElementById("discountItems").innerHTML = discountItems.join(" ");
+            }
+        });
+
+
+</script>
+
+</html>

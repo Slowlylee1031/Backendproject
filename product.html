@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatti | Product</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&display=swap"
+        rel="stylesheet">
+    <link href="css/header_footer.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link href="css/jquery.bxslider.min.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="include-header"></div>
+    <!-- slider -->
+    <main class="container">
+        <section id="left">
+            <div id="sliderImage">
+                <div id="bxslider" class="bxslider" style="max-width: 100%;"></div>
+            </div>
+        </section>
+
+        <!-- Product Details -->
+        <section id="right">
+            <div class="detailsContainer">
+                <!-- Product Details -->
+                <div id="productDetails">
+                    <div id="productInfo"></div>
+                    <img src="img/local/Heart.svg" style="width:57px;" alt="heart">
+                </div>
+
+                <div class="color">
+                    <h5>Color</h5>
+                    <div id="colorOptions" onClick="colorClick(event)"></div>
+                </div>
+
+                <div class="sizeInfo">
+                    <div class="title"></div>
+                    <h5>Sizes</h5>
+                    <div class="size_guide">
+                        <img src="img/local/Ruler.svg" style="width:31px;" alt="rulers">
+                        <h7>Size Guide</h7>
+                    </div>
+
+                    <div id="sizeOptions"></div>
+                    <div><i>*</i> Few Stock left</div>
+                </div>
+                <form onsubmit="return buyingQty(event)">
+                    <fieldset>
+                        
+                    
+                        <div><input type="number" id="quantity" name="quantity" min="1" max="3"></div>
+                        
+                    </fieldset>
+                    <input type="submit" value="Add to Cart">
+                </form>
+
+                <!-- Description -->
+                <div class="header">
+                    <div class="title">
+                        <h6>Description</h6>
+                        <div class="arrow">
+                            <img src="img/local/arrow up.svg" class="close" alt="Close">
+                            <img src="img/local/arrow down.svg" alt="Open">  
+                        </div>
+                        <div id="description-open" class="open"></div>
+                    </div>
+                    
+                </div>
+
+                <!-- Material  -->
+
+                <div class="header">
+                    <div class="title">
+                        <h6>Material</h6>
+                        <div class="arrow">
+                            <img src="img//local/arrow up.svg" class="close" alt="Close">
+                            <img src="img/local/arrow down.svg" alt="Open">
+                        </div>
+                    </div>
+                    <div class="open">
+                        <div class="row1">
+                            <h6>Composition</h6>
+                            <p><strong>Shell:</strong>Viscose 69%, Polyamide 31%</p>
+                            <p><strong>Lining:</strong> Polyester 100%</p>
+                        </div>
+                        <div class="row1">
+                            <h6>Additional material information</h6>
+                            <p>The total weight of this product contains:<br>52% LENZING™ ECOVERO™ viscose<br>23%
+                                Recycled polyester</p>
+                            <p>We exclude the weight of minor components such as, but not exclusively:threads, buttons,
+                                zippers, embellishments and prints.</p>
+                            <p>The total weight of the product is calculated by adding the weight of all layers and main
+                                components together. Based on that, we calculate how much of that weight is made out by
+                                each material. For sets &amp; multipacks all pieces are counted together as one product
+                                in calculations.</p>
+                        </div>
+                        <div class="row1">
+                            <h6>Materials in this product explained</h6>
+                            <h7>LENZING™ ECOVERO™ viscose</h7>
+                            <p>LENZING™ ECOVERO™ viscose is a branded viscose fibre, made from wood pulp.</p>
+                            <h7>Polyamide</h7>
+                            <p>Polyamide, also called nylon, is a synthetic fibre made from oil (a fossil resource).</p>
+                            <h7>Polyester</h7>
+                            <p>Polyester is a synthetic fibre made from crude oil (a fossil resource).</p>
+                            <h7>Recycled polyester</h7>
+                            <p>Recycled polyester is polyester made from PET bottles or end-of-life textile waste. The
+                                PET bottles or textile waste is mechanically recycled and processed into new yarn.</p>
+                            <h7>Viscose</h7>
+                            <p>Viscose is a regenerated cellulose fibre commonly made from wood, but the raw
+                                material could also consist of other cellulosic materials.</p>
+                            <div class="supplier_btn">
+                                <h4>Supplier imformation</h4>
+                                <img src="img/local/btn arrow right.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Care guid -->
+                <div class="header">
+                    <div class="title">
+                        <h6>Care guid</h6>
+                        <div class="arrow">
+                            <img src="img/local/arrow up.svg" class="close" alt="Close">
+                            <img src="img/local/arrow down.svg" alt="Open">
+                        </div>
+                    </div>
+
+                    <div class="open">
+                        <p>You too can help the environment and make fashion more sustainable. Bring unwanted clothes or
+                            home textiles to any H&amp;M store and they will be reworn, reused or recycled.</p>
+                        <p class="read">Read about how you can make your clothes last longer</p>
+                        <div class="care">Care instructions
+                            <ul>
+                                <li>・Low iron</li>
+                                <li>・Can be dry cleaned</li>
+                                <li>・Machine wash at 30°</li>
+                                <li>・Line dry</li>
+                                <li>・Only non-chlorine bleach when needed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+
+        <!-- Footer
+        <div id="include-footer"></div> -->
+</body>
+
+<script>
+
+    let skuData = '';
+
+    function colorClick(e){
+        console.log(' clicked')
+        let color = e.target.currentSrc
+        let curt = color.indexOf("icon/")+5;
+        color = color.substring(curt,color.length-4);
+
+        displaysku(color);
+    }
+
+    function displaysku(color){
+        let input = '';
+        let name = skuData.name;
+        for(i = 0; i < skuData.sku.length; i++){
+            console.log(skuData.sku[i].color, color)
+            if(skuData.sku[i].color == color){
+                input = skuData.sku[i];
+            }
+        }
+        console.log(input);
+        // get product sizes
+        let allsizes = [];
+        let eachStock = 0;
+        let units = input.Unit;
+        let showMsg =[];
+
+        for(let i = 0; i < units.length; i++){
+            let size = '';
+            let msg = '';
+            console.log('QTY' + units[i].qty)
+            if(units[i].qty === 0){
+                size = `
+                    <button class="sizes-btn" style="background-color:#FFF">
+                        <label> ${units[i].size}  </label>
+                    </button>
+                    `
+            }else if(units[i].qty <= 3){
+                size = `
+                    <button class="sizes-btn">
+                        <label> <i style="color:#f00000; font-size:12px">*</i> ${units[i].size} </label>
+                    </button>
+                    `
+            }else{
+                size = `
+                    <button class="sizes-btn">
+                        <label> ${units[i].size}  </label>
+                    </button>
+                    `
+            }
+            allsizes.push(size);
+        }
+        document.getElementById("sizeOptions").innerHTML = allsizes.join(" ");
+
+        // get silder image
+        let Images = [];
+        function slider(){
+            let img = '';
+            console.log(input.image.length);
+            for( k = 0; k < input.image.length; k++){
+                img = `
+                    <div><img src="/img/Product/${name}/${input.color}/00${k+1}.png"></div>
+                `
+            Images.push(img);
+            }
+            
+        }
+        slider();
+        console.log(Images);
+        document.getElementById("bxslider").innerHTML = Images.join(" ");
+    }
+
+    $(document).ready(function () {
+        // included Header and Footer
+        $("#include-header").load("inc_header.html");
+        $("#include-footer").load("inc_footer.html");
+
+
+        // $(".open").hide();
+    
+        let urlParams = new URLSearchParams(window.location.search)
+        console.log(urlParams.get('product'))
+        fetch('/products/'+ urlParams.get('product'))
+            .then(res => res.json())
+            .then(data => {
+        
+                // get productInfo
+                let productInfo = `
+                    <div class="title">
+                        <h6>${data[0].name}</h6>
+                        <h5>$${data[0].price}</h5>
+                        <h5></h5>
+                    </div>
+                `
+                document.getElementById("productInfo").innerHTML = productInfo;
+
+                // get color styles
+                let allColors = [];
+
+                for (let i = 0; i < data[0].colorIcon.length; i++) {
+                const colorIcon = data[0].colorIcon[i];
+                console.log(colorIcon);
+                let icon = `
+                <div>
+                    <img class="icon" src="${colorIcon}" style="width:48px;">
+                </div>
+                `;
+                allColors.push(icon);
+                }
+                document.getElementById("colorOptions").innerHTML = allColors.join(" ");
+
+                skuData = data[0];
+                displaysku(data[0].sku[0].color);
+
+                //get Description info
+                let productDescription = [];
+
+                let Description =`
+                    <p>${data.details}</p>
+                    <p>${data.length}</p>
+                    <p>${data.fit}</p>
+                    <p>${data.style}</p>
+                    <p>${data.sleeveStyle}</p>
+                    <p>${data.color}</p>
+                    `
+                productDescription.push(Description);
+
+                document.getElementById("description-open").innerHTML = productDescription;
+
+
+                // $('.bxslider').bxSlider({
+                //     auto: true,
+                //     autoControls: true,
+                //     autoControls: true,
+                //     stopAutoOnClick: true,
+                //     pager: true,
+                //     adaptiveHeight: true,
+                //     slideWidth: 600,
+                // });
+                    
+            })
+    //         $(".header .title").on("click", function() {
+	// 				$(this).siblings().slideToggle();
+	// 				// $(this).parent().siblings().children(".open").slideUp();
+	// 				$(this).find("arrow img").toggle();
+    //                 // $(this).parent().siblings().children().slideUp;
+    //         });	
+    //         $(".options button").on("click",function(){
+    //             $(this).toggleClass("open").siblings().removeClass("open");
+    //         });
+
+    });
+
+   
+        
+    // for(let j = 0; j < units.length.Qty; j++){}
+                
+
+    
+
+
+
+        
+
+</script>
+
+</html>

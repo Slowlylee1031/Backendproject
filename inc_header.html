@@ -1,0 +1,118 @@
+<header>
+	<section class="desktop">
+		<div class="container">
+			<a href="index.html" rel="homepage" alt="Home page">
+				<img class="logo" src="img/local/logo.png">
+			</a>
+			<ul>
+				<li>News</li>
+				<li>Clothes</li>
+				<li>Pants</li>
+				<li>Underwear</li>
+				<li>Accessories</li>
+			</ul>
+			<div class="icon">
+				<img src="img/local/bag.png" class="bag">
+				<a id="setting" opacity="0.3"><img id="settingpng" src="img/local/setting-blur.png" class="setting"></a>
+				<nav class="login">
+					<div id="beforelogin"><a href="login.html">Login</a><span>/</span><a href="signup.html">Sign Up</a></div>
+					<div id="afterlogin"><a onclick="logout(); return false" href="#">Logout</a><span>/</span><a onclick="inactivate(); return false" href="#">Inactivate</a></div>
+				</nav>
+			</div>
+		</div>
+	</section>
+	<section class="mobile">
+		<div class="container">
+			<a href="index.html" rel="homepage" alt="Home page">
+				<img class="logo" src="img/local/logo.png">
+			</a>
+			<div>
+				<div class="icon">
+					<img src="img/local/bag.png" class="bag">
+					<img src="img/local/setting.png" class="setting">
+				</div>
+				<div class="burger">
+					<img src="img/local/Burger.svg" class="default">
+					<img src="img/local/Close menu.svg" class="close-menu">
+					<ul>
+						<li>News</li>
+						<li>Clothes</li>
+						<li>Pants</li>
+						<li>Underwear</li>
+						<li>Accessories</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+</header>
+
+	<script>
+		async function logout() {
+			try {
+				const response = await axios.get('/api/sessions/logout')
+				const name = response.data.name;
+				document.getElementById("main").classList.remove("container")
+				document.getElementById("main").innerHTML = `<h1 style="margin: 45px 10px;">Logout<h1><h2>You (${name}) have successfully logged out<h2>`
+				document.getElementById("main").style.height = "300px"
+				document.getElementById("main").style.textAlign = "center"
+				$("#beforelogin").show()
+				$("#afterlogin").hide()
+				$("#setting").removeAttr("href")
+				$("#settingpng").attr("src","img/local/setting-blur.png")
+			} catch(error) {
+				alert('logout: ' + error.response.data.message)
+			}
+		}
+		async function inactivate() {
+			try {
+				const response = await axios.delete('/api/users')
+				const name = response.data.name;
+				document.getElementById("main").classList.remove("container")
+				document.getElementById("main").innerHTML = `<h1 style="margin: 45px 10px;">Inactivate<h1><h2>You (${name}) have successfully inactivated your login<h2>`
+				document.getElementById("main").style.height = "300px"
+				document.getElementById("main").style.textAlign = "center"
+				$("#beforelogin").show()
+				$("#afterlogin").hide()
+				$("#setting").removeAttr("href")
+				$("#settingpng").attr("src","img/local/setting-blur.png")
+			} catch(error) {
+				alert('inactivate: ' + error.response.data.message)
+			}
+		}
+		async function checksession() {
+			try {
+				const response = await axios.get('/api/sessions')
+				const loggedin = response.data.loggedin;
+				if (loggedin) {
+					$("#beforelogin").hide()
+					$("#afterlogin").show()
+					$("#setting").attr("href","/profile.html")
+					$("#settingpng").attr("src","img/local/setting.png")
+				} else {
+					$("#beforelogin").show()
+					$("#afterlogin").hide()
+					$("#setting").removeAttr("href")
+					$("#settingpng").attr("src","img/local/setting-blur.png")
+				}
+			} catch(error) {
+				alert('checksession: ' + error.response.data.message)
+				$("#beforelogin").hide()
+				$("#afterlogin").show()
+				$("#setting").attr("href","/profile.html")
+				$("#settingpng").attr("src","img/local/setting.png")
+			}
+		}
+
+		$(document).ready(function() {
+			$(".mobile ul").hide();
+			$(".burger").on("click",function(){
+				$(".burger img").toggle();
+				$(".mobile ul").slideToggle();
+			})
+			// console.log('inc_header doc ready')
+			// checksession()
+		 });
+
+	</script>
