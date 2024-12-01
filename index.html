@@ -41,12 +41,12 @@
 
             <div class="newDisplay">
                 <h1 class="title">New Arrivals</h1>
-                <div id="newItems" class="contentbox" style="background-color: aquamarine;"></div>
+                <div id="newItems" class="contentbox"></div>
             </div>
 
             <div class="sellDisplay">
                 <h1 class="title">On Sale</h1>
-                <div id="discountItems" class="contentbox" style="background-color: aquamarine;"></div>
+                <div id="discountItems" class="contentbox"></div>
             <div>
 
         </section>
@@ -89,7 +89,7 @@
 					<img src="img/local/Tips.png" alt="">
 				</div>
 			</section>
-
+    </main>
             <!-- Footer -->
             <div id="include-footer"></div>
 
@@ -124,13 +124,15 @@
 
                     let msg = `
                      <div class="item">
-                       <a href="/product.html?name=${name}/firstColor/">
+                       <a href="/product.html?name=${name}">
                                 <div class="display">
                                     <img class="main" src="${main}">
                                     <img class="hover" src="${hover}">
                                 </div>
-                                <h3 class="name">${name}</h3>
-                                <h2 id="price">$${price}</h2>
+                                <div class="price">
+                                    <h3 class="name">${name}</h3>
+                                    <h2 id="price">HKD$${price}</h2>
+                                </div>
                         </a>
                     </div>
                     `
@@ -152,15 +154,19 @@
                     let discount = data[i].discount;
 
                     let disItems = `
-                        <div class="item">
+                    <div class="item">
                        <a href="/product.html?name=${name}">
                                 <div class="display">
                                     <img class="main" src="${main}">
                                     <img class="hover" src="${hover}">
                                 </div>
-                                <h3 class="name">${name}</h3>
-                                <h2 id="price">$${price}</h2>
-                                <h2 id="discount">$${discount}</h2>
+                                <div class="price">
+                                    <h3 class="name">${name}</h3>
+                                    <div class="dis">
+                                        <h2 id="discount">HKD$${discount}</h2>
+                                        <h2 id="price">HKD$${price}</h2>
+                                    </div>
+                                </div>
                         </a>
                     </div>
                     `

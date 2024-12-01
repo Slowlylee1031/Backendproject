@@ -40,27 +40,27 @@
                 </div>
 
                 <div class="color">
-                    <h5>Color</h5>
+                    <h5>Color(s)</h5>
                     <div id="colorOptions" onClick="colorClick(event)"></div>
                 </div>
 
                 <div class="sizeInfo">
-                    <div class="title"></div>
-                    <h5>Sizes</h5>
-                    <div class="size_guide">
-                        <img src="img/local/Ruler.svg" style="width:31px;" alt="rulers">
-                        <h7>Size Guide</h7>
+                    <div class="title">
+                        <h5>Sizes</h5>
+                        <div class="size_guide">
+                            <img src="img/local/Ruler.svg" style="width:31px;" alt="rulers">
+                            <h7>Size Guide</h7>
+                        </div>
                     </div>
-
-                    <div id="sizeOptions"></div>
-                    <div><i>*</i> Few Stock left</div>
-                </div>
+                    <div class="note"><i>*</i> Few Stock left</div>
+                    <div>
+                        <div id="sizeOptions"></div>
+                    </div>
+                
                 <form onsubmit="return buyingQty(event)">
+                    <h5>Quantity</h5>
                     <fieldset>
-                        
-                    
-                        <div><input type="number" id="quantity" name="quantity" min="1" max="3"></div>
-                        
+                        <div><input type="number" id="quantity" name="quantity" min="1" max="5" value="1"></div>
                     </fieldset>
                     <input type="submit" value="Add to Cart">
                 </form>
@@ -141,7 +141,8 @@
                         <p>You too can help the environment and make fashion more sustainable. Bring unwanted clothes or
                             home textiles to any H&amp;M store and they will be reworn, reused or recycled.</p>
                         <p class="read">Read about how you can make your clothes last longer</p>
-                        <div class="care">Care instructions
+                        <div class="care">
+                            <p>Care instructions</p>
                             <ul>
                                 <li>・Low iron</li>
                                 <li>・Can be dry cleaned</li>
@@ -197,7 +198,7 @@
             console.log('QTY' + units[i].qty)
             if(units[i].qty === 0){
                 size = `
-                    <button class="sizes-btn" style="background-color:#FFF">
+                    <button class="sizes-btn" style="background-color:#828282; cursor: none; color:#fff">
                         <label> ${units[i].size}  </label>
                     </button>
                     `
@@ -225,7 +226,7 @@
             console.log(input.image.length);
             for( k = 0; k < input.image.length; k++){
                 img = `
-                    <div><img src="/img/Product/${name}/${input.color}/00${k+1}.png"></div>
+                    <div><img src="img/Product/${name}/${input.color}/00${k+1}.png"></div>
                 `
             Images.push(img);
             }
@@ -264,8 +265,8 @@
                 const colorIcon = data[0].colorIcon[i];
                 console.log(colorIcon);
                 let icon = `
-                <div>
-                    <img class="icon" src="${colorIcon}" style="width:48px;">
+                <div id="colors">
+                    <img class="icon" src="${colorIcon}" style="width:134px;">
                 </div>
                 `;
                 allColors.push(icon);
@@ -279,12 +280,14 @@
                 let productDescription = [];
 
                 let Description =`
-                    <p>${skuData.details}</p>
-                    <p>${skuData.length}</p>
-                    <p>${skuData.fit}</p>
-                    <p>${skuData.style}</p>
-                    <p>${skuData.sleeveStyle}</p>
-                    <p>${skuData.color}</p>
+                    <div id="skuDetails"><p>${skuData.details}</p></div>
+                    <div class="skuPoints">
+                        <p>${skuData.length}</p></div>
+                        <p>${skuData.fit}</p>
+                        <p>${skuData.style}</p>
+                        <p>${skuData.sleeveStyle}</p>
+                        <p>${skuData.color}</p>
+                    </div>
                     `
                 productDescription.push(Description);
 
