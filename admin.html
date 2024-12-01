@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&display=swap"
+        rel="stylesheet">
+    <title>Fatti | Admin</title>
+</head>
+<body>
+    <header style="background-color:#fdfae0; height:100px; display: flex; align-items: center; justify-content: center;">
+        <div>
+            <img src="img/local/logo.png" style="max-width: 80px; height: auto;">
+            <h4></h4>
+        </div>
+    </header>
+    <main style="text-align: center;color:#4b0b07; margin-top: 48px;"  onclick="">
+        <div class="container" style="width:600px; margin:0 auto ;border-radius: 16px;padding:48px;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2)">
+            <h1 style="font-size: 48px; padding-bottom:48px;">Login</h1>
+            <fieldset>
+                <label>Login Name</label></fieldset><br>
+                <input type="text" id="name" style="width:100%; height:48px;text-align: center;border-radius: 2px;">
+            </fieldset>
+            <fieldset style="padding:48px 0px;">
+                <label>Password</label><br>
+                <input type="text" id="password" style="width: 100%; height: 48px; text-align: center; border-radius: 2px;margin-top:12px;">
+            </fieldset>
+            <button style="height: 48px; width: 100%; border-radius: 2px; background-color: #4b0b07; color: white; border-radius: 4px;cursor: pointer;">Submit</button>
+            <div id="msg"></div>
+        </div>
+    </main>
+</body>
+<script>
+
+let adminName = ''; 
+let adminPassword = ''; 
+
+fetch('http://localhost:3001/admin')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+
+        if(adminName !== data.name || adminPassword !== data.password){
+            let msg =`
+                <p style="color:red;">Failed login. Please try again<p>
+            `
+        }
+        })
+
+</script>
+
+</html>
