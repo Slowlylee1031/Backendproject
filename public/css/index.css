@@ -40,48 +40,28 @@
 
 .mainBody{
 	max-width:1000px;
-	margin: 0 auto;
+	height:auto;
+	margin:0 auto;
+	margin-top:48px;
+	margin-bottom: 36px;
 }
 
-.contentbox{
-	margin-top:20px;
+.mainBody h1{
+	padding-bottom:36px;
 }
 
-/* NewItems */
-.newDisplay{
-	margin-bottom:48px;
+.mainBody .contentbox{
+	display: flex;
+	max-width:100%;
 }
 
-.contentbox{
-	display:flex;
-	flex-wrap: wrap;
-	max-width: 1000px;
+.newDisplay, .sellDisplay{
+	margin-top:36px;
 }
 
-.item{
-	display:flex;
-	max-width:20%;
-	padding:12px;
-
-}
-.item a{
-	text-decoration: None !important;
-	color:inherit;
-
-}
-
-.newDisplay #price{
-	padding-top:12px;
-	text-align: right;
-}
-
-a{
-	text-decoration: none;
-}
-
-.display img{
-	border: 2px solid #926c51;
-	border-radius: 4px;
+.display{
+	border: 3px solid #4b0b07;
+	border-radius: 6px;
 }
 
 .display .hover{
@@ -92,19 +72,55 @@ a{
 	display:none;
 }
 
-.display:hover .hover{
+.display:hover .hover {
+	display:block;
+}
+
+.item{
+	padding-right:50px;
 	display:flex;
 }
 
-/*Discount Item*/
-
-.productName{
-	display:flex;
+.item a{
+	text-decoration: none;
+	width:100%;
+	flex-wrap: wrap;
 }
 
-.productName div{
-	flex:1
+.item a:hover{
+	text-decoration: none;
+	color: #fff;
 }
+
+.price{
+	height:64px;
+}
+
+.price .name{
+	height:40px;
+	line-height: 18px;
+	margin:12px 0px;
+}
+
+.price .dis{
+	display: flex;
+	align-items: center;
+}
+
+.price .dis #discount{
+	padding-right: 10px;
+	font-size: 20px;
+	color: red;
+}
+
+.dis #price{
+	text-decoration: line-through;
+	font-size: 14px;
+}
+
+
+
+
 
 
 
@@ -132,7 +148,6 @@ a{
 	background-color: #ccd5ae;
 	padding-bottom: 85px;
 	display: flex;
-    flex-direction: column;
     align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
