@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&display=swap"
         rel="stylesheet">
+    <script src="admin.js"></script>
     <title>Fatti | Admin</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
             <h4></h4>
         </div>
     </header>
-    <main style="text-align: center;color:#4b0b07; margin-top: 48px;"  onclick="">
+    <form style="text-align: center;color:#4b0b07; margin-top: 48px;"  method="get" action="/">
         <div class="container" style="width:600px; margin:0 auto ;border-radius: 16px;padding:48px;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2)">
             <h1 style="font-size: 48px; padding-bottom:48px;">Login</h1>
             <fieldset>
@@ -36,10 +37,10 @@
 </body>
 <script>
 
-let adminName = ''; 
-let adminPassword = ''; 
+let adminName = 'admin'; 
+let adminPassword = '12345'; 
 
-fetch('http://localhost:3001/admin')
+fetch('http://localhost:3000/admin')
         .then(res => res.json())
         .then(data => {
             console.log(data);
