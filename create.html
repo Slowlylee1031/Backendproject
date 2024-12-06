@@ -112,17 +112,16 @@
     }
 
     fetch('/api/productEdit', obj)
-    
         .then(res => res.json())
         .then(data => {
             // console.log(data);
             let msg = '';
             if(data.message === undefined) {
 
-                msg = `<div class="note"> 產品保存失敗，請重新再試！ </div>`
+                msg = `<div class="note"> 產品已保存成功！ </div>`
             
             }else{
-                msg = `<div class="note"> 產品已保存成功！ </div>`
+                msg = `<div class="note"> 產品保存失敗，請重新再試！ </div>`
             }
             document.getElementById('note').innerHTML = msg;
             
