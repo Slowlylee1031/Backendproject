@@ -1,0 +1,129 @@
+header{
+    background-color:#fdfae0; 
+    height:100px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#menu{
+    display: flex; 
+    margin-right:48px; 
+    align-items: baseline;
+}
+
+#menu img{
+    max-width: 80px; 
+    height: auto;
+}
+
+#menu nav{
+    display:flex;
+    margin-left:48px;
+    gap:48px;
+    cursor: pointer;
+}
+
+#menu nav a{
+    text-decoration: none;
+}
+
+#menu nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    text-align: center;
+    color:#4b0b07; 
+    margin-top: 48px;
+}
+
+main .container{
+    width:600px; 
+    margin:0 auto;
+    border-radius: 16px;
+    padding:48px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container h1{
+    font-size: 28px; 
+    padding-bottom:48px
+}
+
+fieldset{
+    margin: 16px 0px 24px 0px;
+}
+
+input[type=text]{
+    width:100%;
+    height:36px;
+    margin-top:12px;
+    text-align: center;
+}
+
+input[type=number]{
+   width:100%;
+   height:36px;
+   margin-top:12px;
+   text-align: center; 
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.newItem div{
+    margin-top:6px;
+    display:flex; 
+    justify-content: center;
+    padding-right:6px;
+}   
+
+.newItem .btn{
+    gap:24px;
+}
+
+.radio {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #6b6b6b;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    margin-top:14px;
+  }
+
+button{
+    width:100%;
+    height:48px;
+    font-size:20px;
+    color:#4b0b07;
+    border:1px solid #4b0b07;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+button:hover{
+    color:#fff;
+    background-color: #4b0b07;
+}
+
+#note{
+    margin-top:18px;
+    color:red;
+}
+
+i{
+    margin-right:4px;
+    color:red;
+}
