@@ -114,7 +114,7 @@
     fetch('/api/productEdit', obj)
         .then(res => res.json())
         .then(data => {
-            // console.log(data);
+            console.log('data',data);
             let msg = '';
             if(data.message === undefined) {
 
