@@ -37,7 +37,7 @@ router.post('/',async (req, res) => {
         const savedProduct = await newDbProduct.save();
         // console.log('產品已保存:', savedProduct);
         // res.json({ message: 'success', data: savedProduct });
-        message = 'success';
+        // message = 'success';
         data = savedProduct;
     } catch (error) {
         // console.error('保存產品失敗:', error);
@@ -62,26 +62,13 @@ router.put('/:name', async (req, res) => {
     const updateData = {};
     validFields.forEach(field => {
         if (updates[field] !== undefined) {
-            updateData[field] = updates[field]; // Only include fields that are present in the request  
+            updateData[field] = updates[field];  
         }
     });
-    // matchProduct(n){
-    //     (req.body).update(
-    //       {price:{price}},  
-    //       {discount:{discount}},
-    //       {newItem:{newItem}},
-    //       {details:{details}},
-    //       {fit:{fit}},
-    //       {style:{style}},
-    //       {sleeveStyle:{sleeveStyle}},
-    //       {sleeveStyle:{color}},
-    //     )
-    // }
-
     console.log('After update value!', req.body);
 
     try {
-        const updateProduct = await Product.findOneAndUpdate(
+        updateProduct = await Product.findOneAndUpdate(
             {name},
             { $set: updateData },
             { new: true, runValidators: true } 
