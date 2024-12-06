@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&display=swap"
+        rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <title>Fatti | Admin</title>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <img src="img/local/logo.png">
+            <nav>
+                <a id="create" href="create.html">Creat Product</a>
+                <a id="edit" href="edit.html">Edit Product</a>
+                <a id="delete" href="delete.html">Delete Product</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container" >
+            <h1>Delete Product</h1>
+            <form id="deleteForm" onsubmit="deleteProduct();return false">
+                <fieldset>
+                    <label><i>*</i>Product Name</label>
+                    <input type="text" name="delete">
+                </fieldset>
+                
+                <button>Submit</button>
+                <div id="note"></div>
+            </form>
+        </div>
+    </main>
+</body>
+<script>
+   async function deleteProduct(){
+           
+            const deleteFormData = new FormData(document.getElementById("deleteForm"))
+            const deleteData = {}; 
+            
+            for (const [name, value] of deleteFormData.entries()) {
+                if (name && value) {
+                    deleteData[name] = value;
+                }
+            }
+
+            console.log('deleteproduct', deleteData)
+
+            // call API
+            fetch(`/api/productEdit/${deleteData.delete}`, {
+                method: 'DELETE',
+                headers: {
+                  "Content-Type": "application/json",
+                }
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                let msg = '';
+                if(data.message == '產品已刪除'){
+                    msg = `<div>成功刪除產品<div>`
+                }else{
+                    msg = `<div>產品刪除失敗，請重新再試<div>`
+                }
+                document.getElementById('note').innerHTML = msg;
+            });
+        };
+
+
+    
+
+</script>
+</html>

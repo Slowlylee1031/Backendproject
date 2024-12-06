@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&display=swap"
+        rel="stylesheet">
+    <link href="css/admin.css" rel="stylesheet">
+    <title>Fatti | Update</title>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <img src="img/local/logo.png">
+            <nav>
+                <a id="create" href="create.html">Creat Product</a>
+                <a id="edit" href="edit.html">Edit Product</a>
+                <a id="delete" href="delete.html">Delete Product</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container" >
+            <h1>Update Product</h1>
+            <form id="form" onsubmit="updateProduct();return false">
+                <fieldset>
+                    <label><i>*</i>Product Name</label>
+                    <input type="text" id="productName">
+                </fieldset>
+                <fieldset>
+                    <label><i>*</i>Price</label>
+                    <input type="number" id="productPrice">
+                </fieldset>
+                <fieldset>
+                    <label><i>*</i>Discount</label>
+                    <input type="number" value="0" id="productDiscount">
+                </fieldset>
+                <fieldset class="newItem">
+                    <label><i>*</i>New Item</label>
+                    <div class="btn" id="newItem">
+                        <div><input type="radio" name="newItem" value="true">Yes</div>
+                        <div><input type="radio" name="newItem" value="false" checked>No</div>
+                    </div>
+                </fieldset>
+                <fieldset class="details">
+                    <label><i>*</i>Details</label>
+                    <textarea name="comment" form="usrform" id="details"></textarea>
+                </fieldset>
+                <fieldset class="details">
+                    <label>Length</label>
+                    <textarea name="comment" form="usrform" id="length"></textarea>
+                </fieldset>
+                <fieldset class="details">
+                    <label>Fit</label>
+                    <textarea name="comment" form="usrform" id="fit"></textarea>
+                </fieldset>
+                <fieldset class="details">
+                    <label>Style</label>
+                    <textarea name="comment" form="usrform" id="style"></textarea>
+                </fieldset>
+                <fieldset class="details">
+                    <label>Sleeve Style</label>
+                    <textarea name="comment" form="usrform" id="sleeveStyle"></textarea>
+                </fieldset>
+                <fieldset class="details">
+                    <label>Color</label>
+                    <textarea name="comment" form="usrform" id="color"></textarea>
+                </fieldset>
+                
+                <button>Submit</button>
+                <div id="note"></div>
+            </form>
+        </div>
+    </main>
+</body>
+
+<script>
+    async function updateProduct(){
+        const newName = document.getElementById('productName').value;
+        const newPrice = document.getElementById('productPrice').value;
+        const newDiscount = document.getElementById('productDiscount').value;
+        const newNewItem = document.getElementById('newItem').value;
+        const newDetails = document.getElementById('details').value;
+        const newLength = document.getElementById('length').value;
+        const newFit = document.getElementById('fit').value;
+        const newStyle = document.getElementById('style').value;
+        const newSleeveStyle = document.getElementById('sleeveStyle').value;
+        const newColor = document.getElementById('color').value;
+
+
+    }
+
+    const newProduct = {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            name:newName,
+            price:newPrice,
+            discount:newDiscount,
+            newItem:newNewItem,
+            details:newDetails,
+            length:newLength,
+            fit:newFit,
+            style:newStyle,
+            sleeveStyle:newSleeveStyle,
+            color:newColor,
+         })
+    };
+    fetch('/api/productEdit', newProduct)
+        .then(res => res.json())
+        .then(data =>
+        {
+            console.log('data'.data)
+            let msg = '';
+            if(data.message == undefined){
+                msg = `<div>產品更新成功。</div>`
+            }else{
+                msg = `<div>產品更新失敗，請重新再試。</div>`
+            }
+            document.getElementById('note').innerHTML = msg;
+        });
+</script>
+</html>
