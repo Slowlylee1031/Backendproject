@@ -79,49 +79,54 @@
 </body>
 
 <script>
-    async function updateProduct(){
-        const newName = document.getElementById('productName').value;
-        const newPrice = document.getElementById('productPrice').value;
-        const newDiscount = document.getElementById('productDiscount').value;
-        const newNewItem = document.getElementById('newItem').value;
-        const newDetails = document.getElementById('details').value;
-        const newLength = document.getElementById('length').value;
-        const newFit = document.getElementById('fit').value;
-        const newStyle = document.getElementById('style').value;
-        const newSleeveStyle = document.getElementById('sleeveStyle').value;
-        const newColor = document.getElementById('color').value;
 
-
-    }
-
-    const newProduct = {
+async function updateProduct() {
+    const newProductName = document.getElementById('productName').value;
+    const newPrice = document.getElementById('productPrice').value;
+    const newDiscount = document.getElementById('productDiscount').value;
+    const newNewItem = document.getElementById('newItem').value;
+    const newDetails = document.getElementById('details').value;
+    const newLength = document.getElementById('length').value;
+    const newFit = document.getElementById('fit').value;
+    const newStyle = document.getElementById('style').value;
+    const newSleeveStyle = document.getElementById('sleeveStyle').value;
+    const newColor = document.getElementById('color').value;
+    const updateData = {};
+    const obj = {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-            name:newName,
-            price:newPrice,
-            discount:newDiscount,
-            newItem:newNewItem,
-            details:newDetails,
-            length:newLength,
-            fit:newFit,
-            style:newStyle,
-            sleeveStyle:newSleeveStyle,
-            color:newColor,
-         })
+            name: newProductName,
+            price: newPrice,
+            discount: newDiscount,
+            newItem: newNewItem,
+            details: newDetails,
+            length: newLength,
+            fit: newFit,
+            style: newStyle,
+            sleeveStyle: newSleeveStyle,
+            color: newColor,
+        })
     };
-    fetch('/api/productEdit', newProduct)
+
+    fetch(`/api/productEdit/${updateData.name}`)
         .then(res => res.json())
-        .then(data =>
-        {
-            console.log('data'.data)
+        .then(data => {
+            console.log('data',data);
+            console.log('obj',obj);
             let msg = '';
-            if(data.message == undefined){
-                msg = `<div>產品更新成功。</div>`
+            if(data.message === undefined) {
+
+                msg = `<div class="note"> 產品更新失敗，請重新再試！ </div>`
+            
             }else{
-                msg = `<div>產品更新失敗，請重新再試。</div>`
+                msg = `<div class="note"> 產品更新成功！ </div>`
             }
             document.getElementById('note').innerHTML = msg;
-        });
+            
+    })
+}
+
+   
 </script>
 </html>
