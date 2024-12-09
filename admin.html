@@ -58,16 +58,15 @@ async function checkAdmin() {
         .then(data => {
             if(data.message == 'Successful login.'){
                 window.location.href = '/create.html';
-            }
-            if(data.message){
+            }else{
                 let msg =`
                     <p style="color:red;">Failed login. Please try again<p>
                 `
+            }   
             document.getElementById('msg').innerHTML = msg;
-        }
-    })
-
+        })
 }
+
 
 </script>
 
