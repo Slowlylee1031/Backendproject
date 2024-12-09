@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&display=swap"
         rel="stylesheet">
-    <script src="admin.js"></script>
     <title>Fatti | Admin</title>
 </head>
 <body>
@@ -19,7 +18,7 @@
             <h4></h4>
         </div>
     </header>
-    <form style="text-align: center;color:#4b0b07; margin-top: 48px;"  method="get" action="/">
+    <form id="adminLogin" style="text-align: center;color:#4b0b07; margin-top: 48px;" onsubmit="checkAdmin(); return false">
         <div class="container" style="width:600px; margin:0 auto ;border-radius: 16px;padding:48px;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2)">
             <h1 style="font-size: 48px; padding-bottom:48px;">Login</h1>
             <fieldset>
@@ -31,26 +30,44 @@
                 <input type="text" id="password" style="width: 100%; height: 48px; text-align: center; border-radius: 2px;margin-top:12px;">
             </fieldset>
             <button style="height: 48px; width: 100%; border-radius: 2px; background-color: #4b0b07; color: white; border-radius: 4px;cursor: pointer;">Submit</button>
-            <div id="msg"></div>
+            <div id="msg" style="padding-top:48px;"></div>
         </div>
     </main>
+
 </body>
 <script>
 
-let adminName = 'admin'; 
-let adminPassword = '12345'; 
-
-fetch('http://localhost:3000/admin')
+async function checkAdmin() {
+    const loginName = document.getElementById('name').value;
+    const loginPassword = document.getElementById('password').value;
+    const obj = {
+        method: "POST",
+    
+        body: JSON.stringify({
+            name: loginName,
+            password: loginPassword
+        }),
+        
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    }
+    
+    fetch('/api/admin', obj)
         .then(res => res.json())
         .then(data => {
-            console.log(data);
-
-        if(adminName !== data.name || adminPassword !== data.password){
-            let msg =`
-                <p style="color:red;">Failed login. Please try again<p>
-            `
+            if(data.message == 'Successful login.'){
+                window.location.href = '/create.html';
+            }
+            if(data.message){
+                let msg =`
+                    <p style="color:red;">Failed login. Please try again<p>
+                `
+            document.getElementById('msg').innerHTML = msg;
         }
-        })
+    })
+
+}
 
 </script>
 
