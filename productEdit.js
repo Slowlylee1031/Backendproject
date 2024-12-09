@@ -68,6 +68,9 @@ router.post('/',async (req, res) => {
 router.put('/:name', async (req, res) => {
     const {name} = req.params;
     const updateProduct = '';
+    let message = '';
+    let data = null;
+    let status = 200;
     try {
         updateProduct = await Product.findOneAndUpdate(
             {name},
@@ -76,20 +79,25 @@ router.put('/:name', async (req, res) => {
         console.log('updateProduct',updateProduct)
         
         if (!updatedProduct) {
-            return res.status(404).json({ message: '產品未找到' });
+         message = '產品未找到',
+         status = 200,
+         data = updatedProduct 
         }
              
-        return res.status(200).json({
-            data: updatedProduct 
+        status(200).json({
+            
         });
     } catch (e) {
-        console.error('保存產品失敗:', e.message);
-        return res.status(500).json({
-            message: '保存產品失敗',
-            data: e.message  
-        });
-    }
-});
+        message = '產品保存失敗',
+        status = 500,
+        data = updatedProduct
+         
+    } finally{
+        res.status(status).json({
+            message:message,
+            data
+    })
+}});
 
 // Delete Product
 
