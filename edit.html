@@ -17,7 +17,7 @@
         <div id="menu">
             <img src="img/local/logo.png">
             <nav>
-                <a id="create" href="create.html">Creat Product</a>
+                <a id="create" href="create.html">Create Product</a>
                 <a id="edit" href="edit.html">Edit Product</a>
                 <a id="delete" href="delete.html">Delete Product</a>
             </nav>
@@ -36,7 +36,7 @@
                     <input type="number" id="productPrice">
                 </fieldset>
                 <fieldset>
-                    <label><i>*</i>Discount</label>
+                    <label><i>*</i>Discounted Price</label>
                     <input type="number" value="0" id="productDiscount">
                 </fieldset>
                 <fieldset class="newItem">
@@ -108,12 +108,13 @@ async function updateProduct() {
             color: newColor,
         })
     };
+    updateData.name = newProductName;
+    console.log("updateDate", updateData);
 
-    fetch(`/api/productEdit/${updateData.name}`)
+    fetch(`/api/productEdit/${updateData.name}`,obj)
         .then(res => res.json())
         .then(data => {
-            console.log('data',data);
-            console.log('obj',obj);
+
             let msg = '';
             if(data.message === undefined) {
 

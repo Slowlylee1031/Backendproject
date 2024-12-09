@@ -64,45 +64,32 @@ router.post('/',async (req, res) => {
 
 });
 
-// // PUT 請求：更新一個Product
-// router.put('/:name', async (req, res) => {
-//     // res.status(200).json({
-//     //     message: req.params,
+// PUT 請求：更新一個Product
+router.put('/:name', async (req, res) => {
+    const {name} = req.params;
+    const updateProduct = '';
+    try {
+        updateProduct = await Product.findOneAndUpdate(
+            {name},
+            req.body,
+        );
+        console.log('updateProduct',updateProduct)
         
-//     //     // data: {}
-//     // });
-//     const name = req.params.name;
-//     const updateProduct = req.body;
-//     const validFields = ['price', 'discount', 'newItem', 'details', 'fit', 'style', 'sleeveStyle', 'color'];
-//     const updateData = {};
-//     validFields.forEach(field => {
-//         if (updates[field] !== undefined) {
-//             updateData[field] = updates[field];  
-//         }
-//     });
-//     console.log('After update value!', req.body);
-
-//     try {
-//         updateProduct = await Product.findOneAndUpdate(
-//             {name},
-//             { $set: updateData },
-//             { new: true, runValidators: true } 
-//         );
-//         if (!updatedProduct) {
-//             return res.status(404).json({ message: '產品未找到' });
-//         }
+        if (!updatedProduct) {
+            return res.status(404).json({ message: '產品未找到' });
+        }
              
-//         return res.status(200).json({
-//             data: updatedProduct 
-//         });
-//     } catch (e) {
-//         console.error('保存產品失敗:', e.message);
-//         return res.status(500).json({
-//             message: '保存產品失敗',
-//             data: e.message  
-//         });
-//     }
-// });
+        return res.status(200).json({
+            data: updatedProduct 
+        });
+    } catch (e) {
+        console.error('保存產品失敗:', e.message);
+        return res.status(500).json({
+            message: '保存產品失敗',
+            data: e.message  
+        });
+    }
+});
 
 // Delete Product
 
@@ -119,7 +106,6 @@ router.delete('/:name', async (req, res) => {
             // data: {}
         });
     } catch (e) {
-
         res.status(500).json({
             message: '刪除產品失敗',
             data: e.message
