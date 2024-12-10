@@ -116,12 +116,12 @@ async function updateProduct() {
         .then(data => {
 
             let msg = '';
-            if(data.message === undefined) {
+            if(data.message === '') {
 
-                msg = `<div class="note"> 產品更新失敗，請重新再試！ </div>`
+                msg = `<div class="note"> 產品更新成功！ </div>`
             
             }else{
-                msg = `<div class="note"> 產品更新成功！ </div>`
+                msg = `<div class="note"> 產品更新失敗，請重新再試！ </div>`
             }
             document.getElementById('note').innerHTML = msg;
             

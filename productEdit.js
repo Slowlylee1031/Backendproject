@@ -3,24 +3,24 @@ const Product = require('../models/product')
 const router = new express.Router()
 
 // Create new product
-router.post('/',async (req, res) => {
+router.post('/', async (req, res) => {
     let msg = []
-    if(req.body.name == ''){
-       msg.push("Please fill the name.");
+    if (req.body.name == '') {
+        msg.push("Please fill the name.");
     }
-    if(req.body.price < 0 || req.price == ''){
-       msg.push("Please fill the price.");
+    if (req.body.price < 0 || req.price == '') {
+        msg.push("Please fill the price.");
     }
-    if(req.body.discount < 0 || req.discount == ''){
-       msg.push("Please fill the discount.");
+    if (req.body.discount < 0 || req.discount == '') {
+        msg.push("Please fill the discount.");
     }
-    if(req.body.details == ''){
+    if (req.body.details == '') {
         msg.push("Please fill the detail.");
     }
 
-    if(msg.length > 0){
+    if (msg.length > 0) {
         res.status(400).json({
-            message:msg.join('/')
+            message: msg.join('/')
         })
         return
     }
@@ -36,9 +36,9 @@ router.post('/',async (req, res) => {
         style: req.body.style,
         sleeveStyle: req.body.sleeveStyle,
         color: req.body.color,
-      });
+    });
 
-      console.log('new',newDbProduct)
+    console.log('new', newDbProduct)
 
     let message = '';
     let data = null;
@@ -46,7 +46,7 @@ router.post('/',async (req, res) => {
     try {
         const savedProduct = await newDbProduct.save();
         console.log('產品已保存:', savedProduct);
-        res.json({data: savedProduct });
+        res.json({ data: savedProduct });
         // message = 'success';
         data = savedProduct;
     } catch (error) {
@@ -66,43 +66,39 @@ router.post('/',async (req, res) => {
 
 // PUT 請求：更新一個Product
 router.put('/:name', async (req, res) => {
-    const {name} = req.params;
-    const updateProduct = '';
+    const { name } = req.params;
+    let updateProduct = '';
     let message = '';
-    let data = null;
     let status = 200;
     try {
+        console.log('body',req.body)
         updateProduct = await Product.findOneAndUpdate(
-            {name},
-            req.body,
+             {name}, 
+             req.body
         );
-        console.log('updateProduct',updateProduct)
-        
-        if (!updatedProduct) {
-         message = '產品未找到',
-         status = 200,
-         data = updatedProduct 
+        // console.log('updateProduct', updateProduct) 
+
+        if (!updateProduct) {
+            message = '產品未找到';
+            status = 200
         }
-             
-        status(200).json({
-            
-        });
+
     } catch (e) {
-        message = '產品保存失敗',
-        status = 500,
-        data = updatedProduct
-         
-    } finally{
+        message = '產品保存失敗';
+            status = 500
+            console.log('e',e)
+    } finally {
         res.status(status).json({
-            message:message,
-            data
-    })
-}});
+            message: message,
+        })
+    }
+    
+})
 
 // Delete Product
 
 router.delete('/:name', async (req, res) => {
-    const {name} = req.params;
+    const { name } = req.params;
     try {
         await Product.deleteOne({
             name,
@@ -110,7 +106,7 @@ router.delete('/:name', async (req, res) => {
         // console.log({name})
         res.status(200).json({
             message: '產品已刪除',
-            
+
             // data: {}
         });
     } catch (e) {
