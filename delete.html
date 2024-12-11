@@ -17,8 +17,8 @@
         <div id="menu">
             <img src="img/local/logo.png">
             <nav>
-                <a id="create" href="create.html">Creat Product</a>
-                <a id="edit" href="edit.html">Edit Product</a>
+                <a id="create" href="create.html">Create Product</a>
+                <a id="edit" href="edit.html">Update Product</a>
                 <a id="delete" href="delete.html">Delete Product</a>
             </nav>
         </div>
@@ -65,11 +65,17 @@
                 let msg = '';
                 if(data.message == '產品已刪除'){
                     msg = `<div>成功刪除產品<div>`
+                    document.getElementById('deleteForm').reset();
                 }else{
                     msg = `<div>產品刪除失敗，請重新再試<div>`
                 }
                 document.getElementById('note').innerHTML = msg;
+               
+                setTimeout(() => {
+                        document.getElementById('note').innerHTML = '';
+                }, "4000");
             });
+            
         };
 
 
