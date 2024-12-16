@@ -41,7 +41,7 @@
                 </fieldset>
                 <fieldset class="newItem">
                     <label><i>*</i>New Item</label>
-                    <div class="btn" id="newItem">
+                    <div class="btn" id="newItemId">
                         <div><input type="radio" name="newItem" value="true">Yes</div>
                         <div><input type="radio" name="newItem" value="false" checked>No</div>
                     </div>
@@ -84,7 +84,7 @@ async function updateProduct() {
     const newProductName = document.getElementById('productName').value;
     const newPrice = document.getElementById('productPrice').value;
     const newDiscount = document.getElementById('productDiscount').value;
-    const newNewItem = document.getElementById('newItem').value;
+    const newNewItem = document.getElementById('form').newItem.value;
     const newDetails = document.getElementById('details').value;
     const newLength = document.getElementById('length').value;
     const newFit = document.getElementById('fit').value;
@@ -92,6 +92,7 @@ async function updateProduct() {
     const newSleeveStyle = document.getElementById('sleeveStyle').value;
     const newColor = document.getElementById('color').value;
     const updateData = {};
+
     const obj = {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
@@ -109,7 +110,7 @@ async function updateProduct() {
         })
     };
     updateData.name = newProductName;
-    console.log("updateDate", updateData);
+    console.log("updateDate",obj);
 
     fetch(`/api/productEdit/${updateData.name}`,obj)
         .then(res => res.json())
