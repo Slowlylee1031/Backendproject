@@ -4,6 +4,8 @@
         "price": 399,
         "discount": 0,
         "newItem": true,
+        "category":"clothes",
+        "type":"dresses",
         "colorIcon":[
             "/img/Product/One-shoulder bubble-hem dress/icon/firstColor.png",
             "/img/Product/One-shoulder bubble-hem dress/icon/secondColor.png"
@@ -53,32 +55,35 @@
             }
         ],
         "details":"Short, fitted, one-shoulder dress in woven fabric with gathers at the top and one short balloon sleeve. Concealed zip at one side and a gently flared skirt with a bubble hem. Jersey lining.",
-        "length":"<strong>Length: </strong> Short sleeve",
-        "fit":"<strong>Fit: </strong> Slim fit",
-        "style" : "<strong>Style: </strong> Style Flared, One-shoulder",
-        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Balloon sleeve",
-        "color" : "<strong>Description: </strong> White, Solid colour"
+        "length":"Length: Short sleeve",
+        "fit":"Fit: Slim fit",
+        "style" : "Style: Style Flared, One-shoulder",
+        "sleeveStyle" : "Sleeve Style: Balloon sleeve",
+        "color" : "Description: White, Solid colour"
     },
     {
-        "name": "Ruffled off-the-shoulder dress",
+        "name": "Ruffled off the shoulder dress",
         "price": 399,
         "discount": 0,
         "newItem": true,
+        "category":"clothes",
+        "type":"dresses",
         "colorIcon":[
-            "/img/Product/Ruffled off-the-shoulder dress/icon/firstColor.png",
-            "/img/Product/Ruffled off-the-shoulder dress/icon/secondColor.png",
-            "/img/Product/Ruffled off-the-shoulder dress/icon/thirdColor.png"
+            "/img/Product/Ruffled off the shoulder dress/icon/firstColor.png",
+            "/img/Product/Ruffled off the shoulder dress/icon/secondColor.png",
+            "/img/Product/Ruffled off the shoulder dress/icon/thirdColor.png",
+            "/img/Product/Ruffled off the shoulder dress/icon/forthColor.png"
         ],
         "sku": [
             {
                 "color": "firstColor",
                 "image": [
-                    "/img/Product/Ruffled off-the-shoulder dress/firstColor/001.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/firstColor/002.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/firstColor/003.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/firstColor/004.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/firstColor/005.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/firstColor/006.png"
+                    "/img/Product/Ruffled off the shoulder dress/firstColor/001.png",
+                    "/img/Product/Ruffled off the shoulder dress/firstColor/002.png",
+                    "/img/Product/Ruffled off the shoulder dress/firstColor/003.png",
+                    "/img/Product/Ruffled off the shoulder dress/firstColor/004.png",
+                    "/img/Product/Ruffled off the shoulder dress/firstColor/005.png",
+                    "/img/Product/Ruffled off the shoulder dress/firstColor/006.png"
                 ],
                 "Unit": [
                     {"size": 32, "qty": 10},
@@ -94,12 +99,12 @@
             {
                 "color": "secondColor",
                 "image": [
-                    "/img/Product/Ruffled off-the-shoulder dress/secondColor/001.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/secondColor/002.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/secondColor/003.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/secondColor/004.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/secondColor/005.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/secondColor/006.png"
+                    "/img/Product/Ruffled off the shoulder dress/secondColor/001.png",
+                    "/img/Product/Ruffled off the shoulder dress/secondColor/002.png",
+                    "/img/Product/Ruffled off the shoulder dress/secondColor/003.png",
+                    "/img/Product/Ruffled off the shoulder dress/secondColor/004.png",
+                    "/img/Product/Ruffled off the shoulder dress/secondColor/005.png",
+                    "/img/Product/Ruffled off the shoulder dress/secondColor/006.png"
                 ],
                 "Unit": [
                     {"size": 32, "qty": 10},
@@ -115,12 +120,33 @@
             {
                 "color": "thirdColor",
                 "image": [
-                    "/img/Product/Ruffled off-the-shoulder dress/thirdColor/001.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/thirdColor/002.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/thirdColor/003.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/thirdColor/004.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/thirdColor/005.png",
-                    "/img/Product/Ruffled off-the-shoulder dress/thirdColor/006.png"
+                    "/img/Product/Ruffled off the shoulder dress/thirdColor/001.png",
+                    "/img/Product/Ruffled off the shoulder dress/thirdColor/002.png",
+                    "/img/Product/Ruffled off the shoulder dress/thirdColor/003.png",
+                    "/img/Product/Ruffled off the shoulder dress/thirdColor/004.png",
+                    "/img/Product/Ruffled off the shoulder dress/thirdColor/005.png",
+                    "/img/Product/Ruffled off the shoulder dress/thirdColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "forthColor",
+                "image": [
+                    "/img/Product/Ruffled off the shoulder dress/forthColor/001.png",
+                    "/img/Product/Ruffled off the shoulder dress/forthColor/002.png",
+                    "/img/Product/Ruffled off the shoulder dress/forthColor/003.png",
+                    "/img/Product/Ruffled off the shoulder dress/forthColor/004.png",
+                    "/img/Product/Ruffled off the shoulder dress/forthColor/005.png",
+                    "/img/Product/Ruffled off the shoulder dress/forthColor/006.png"
                 ],
                 "Unit": [
                     {"size": 32, "qty": 10},
@@ -135,22 +161,21 @@
             }
         ],
         "details":"Short, fitted, off-the-shoulder dress in woven fabric with ruffles at the top, a smocked section at the back and a concealed zip with hook-and-eye fastening at one side. Visible seams down the front and back. Lined.",
-        "length":"<strong>Length: </strong> Short sleeve",
-        "fit":"<strong>Fit: </strong> Slim fit",
-        "style" : "<strong>Style: </strong> Off-the-shoulder",
-        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Balloon sleeve",
-        "color" : "<strong>Description: </strong> Light pink/Floral"
+        "length":"Length: Short sleeve",
+        "fit":"Fit: Slim fit",
+        "style" : "Style: Off-the-shoulder",
+        "sleeveStyle" : "Sleeve Style: Balloon sleeve",
+        "color" : "Description: Light pink/Floral"
     },
     {
         "name": "Tie-belt shirt dress",
         "price": 299,
         "discount": 0,
         "newItem": true,
+        "category":"clothes",
+        "type":"dresses",
         "colorIcon":[
-            "/img/Product/Tie-belt shirt dress/icon/firstColor.png",
-            "/img/Product/Tie-belt shirt dress/icon/secondColor.png",
-            "/img/Product/Tie-belt shirt dress/icon/thirdColor.png",
-            "/img/Product/Tie-belt shirt dress/icon/forthColor.png"
+            "/img/Product/Tie-belt shirt dress/icon/firstColor.png"
         ],
         "sku": [
             {
@@ -173,83 +198,22 @@
                     {"size": 44, "qty": 10},
                     {"size": 46, "qty": 10}
                 ]
-            },
-            {
-                "color": "secondColor",
-                "image": [
-                    "/img/Product/Tie-belt shirt dress/secondColor/001.png",
-                    "/img/Product/Tie-belt shirt dress/secondColor/002.png",
-                    "/img/Product/Tie-belt shirt dress/secondColor/003.png",
-                    "/img/Product/Tie-belt shirt dress/secondColor/004.png",
-                    "/img/Product/Tie-belt shirt dress/secondColor/005.png",
-                    "/img/Product/Tie-belt shirt dress/secondColor/006.png"
-                ],
-                "Unit": [
-                    {"size": 32, "qty": 10},
-                    {"size": 34, "qty": 10},
-                    {"size": 36, "qty": 10},
-                    {"size": 38, "qty": 10},
-                    {"size": 40, "qty": 10},
-                    {"size": 42, "qty": 10},
-                    {"size": 44, "qty": 10},
-                    {"size": 46, "qty": 10}
-                ]
-            },
-            {
-                "color": "thirdColor",
-                "image": [
-                    "/img/Product/Tie-belt shirt dress/thirdColor/001.png",
-                    "/img/Product/Tie-belt shirt dress/thirdColor/002.png",
-                    "/img/Product/Tie-belt shirt dress/thirdColor/003.png",
-                    "/img/Product/Tie-belt shirt dress/thirdColor/004.png",
-                    "/img/Product/Tie-belt shirt dress/thirdColor/005.png",
-                    "/img/Product/Tie-belt shirt dress/thirdColor/006.png"
-                ],
-                "Unit": [
-                    {"size": 32, "qty": 10},
-                    {"size": 34, "qty": 10},
-                    {"size": 36, "qty": 10},
-                    {"size": 38, "qty": 10},
-                    {"size": 40, "qty": 10},
-                    {"size": 42, "qty": 10},
-                    {"size": 44, "qty": 10},
-                    {"size": 46, "qty": 10}
-                ]
-            },
-            {
-                "color": "forthColor",
-                "image": [
-                    "/img/Product/Tie-belt shirt dress/forthColor/001.png",
-                    "/img/Product/Tie-belt shirt dress/forthColor/002.png",
-                    "/img/Product/Tie-belt shirt dress/forthColor/003.png",
-                    "/img/Product/Tie-belt shirt dress/forthColor/004.png",
-                    "/img/Product/Tie-belt shirt dress/forthColor/005.png",
-                    "/img/Product/Tie-belt shirt dress/forthColor/006.png"
-                ],
-                "Unit": [
-                    {"size": 32, "qty": 10},
-                    {"size": 34, "qty": 10},
-                    {"size": 36, "qty": 10},
-                    {"size": 38, "qty": 10},
-                    {"size": 40, "qty": 10},
-                    {"size": 42, "qty": 10},
-                    {"size": 44, "qty": 10},
-                    {"size": 46, "qty": 10}
-                ]
             }
         ],
         "details":"Calf-length dress in woven fabric with a collar, buttons down the front and short raglan sleeves. Waist section with narrow elastication at the back, gathers at the front and back and a detachable tie belt.",
-        "length":"<strong>Length: </strong> Short sleeve",
-        "fit":"<strong>Fit: </strong> Regular fit",
-        "style" : "<strong>Style: </strong> Shirt dress",
-        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Balloon sleeve",
-        "color" : "<strong>Description: </strong> Black/Patterned"
+        "length":"Length: Short sleeve",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Shirt dress",
+        "sleeveStyle" : "Sleeve Style: Balloon sleeve",
+        "color" : "Description: Black/Patterned"
     },
     {
         "name": "Tapered-waist dress",
         "price": 249,
         "discount": 0,
         "newItem": true,
+        "category":"clothes",
+        "type":"dresses",
         "colorIcon":[
             "/img/Product/Tapered-waist dress/icon/firstColor.png",
             "/img/Product/Tapered-waist dress/icon/secondColor.png",
@@ -321,17 +285,19 @@
             }
         ],
         "details":"Short dress in woven fabric with a round neckline, concealed zip at the back and short sleeves. Tapered waist with pleats that create gentle draping. Unlined.",
-        "length":"<strong>Length: </strong> Short sleeve",
-        "fit":"<strong>Fit: </strong> Regular fit",
-        "style" : "<strong>Style: </strong> Round neck",
-        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Balloon sleeve",
-        "color" : "<strong>Description: </strong> Black/Floral"
+        "length":"Length: Short sleeve",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Round neck",
+        "sleeveStyle" : "Sleeve Style: Balloon sleeve",
+        "color" : "Description: Black/Floral"
     },
     {
         "name": "Balloon-sleeved wrap dress",
         "price": 299,
         "discount": 160,
         "newItem": false,
+        "category":"clothes",
+        "type":"dresses",
         "colorIcon":[
             "/img/Product/Balloon-sleeved wrap dress/icon/firstColor.png"
         ],
@@ -359,17 +325,19 @@
             }
         ],
         "details":"Calf-length dress in woven fabric made from a viscose and cotton blend with a fitted bodice that has a V-shaped neckline and a wrapover front. Seam at the waist with pleats at the front, long balloon sleeves with narrow elastication at the cuffs, and a gently flared skirt. Unlined.",
-        "length":"<strong>Length: </strong> Long sleeve",
-        "fit":"<strong>Fit: </strong> Regular fit",
-        "style" : "<strong>Style: </strong> Wrapover",
-        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Balloon sleeve",
-        "color" : "<strong>Description: </strong> Black/Patterned"
+        "length":"Length: Long sleeve",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Wrapover",
+        "sleeveStyle" : "Sleeve Style: Balloon sleeve",
+        "color" : "Description: Black/Patterned"
     },
     {
         "name": "Blazer wrap dress",
         "price": 299,
         "discount": 180,
         "newItem": false,
+        "category":"clothes",
+        "type":"dresses",
         "colorIcon":[
             "/img/Product/Blazer wrap dress/icon/firstColor.png",
             "/img/Product/Blazer wrap dress/icon/secondColor.png"
@@ -418,17 +386,19 @@
             }
         ],
         "details":"Short, fitted, sleeveless blazer dress in woven fabric with a shawl collar. Wrapover front with draping at the waist, a concealed button at one side and wide ties at the other. Unlined.",
-        "length":"<strong>Length: </strong> Short",
-        "fit":"<strong>Fit: </strong> Slim fit",
-        "style" : "<strong>Style: </strong> Blazer dress, Draped, Wrapover",
-        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Sleeveless",
-        "color" : "<strong>Description: </strong> White, Solid colour"
+        "length":"Length: Short",
+        "fit":"Fit: Slim fit",
+        "style" : "Style: Blazer dress, Draped, Wrapover",
+        "sleeveStyle" : "Sleeve Style: Sleeveless",
+        "color" : "Description: White, Solid colour"
     },
     {
         "name": "Cold shoulder maxi dress",
         "price": 299,
         "discount": 210,
         "newItem": false,
+        "category":"clothes",
+        "type":"dresses",
         "colorIcon":[
             "/img/Product/Cold shoulder maxi dress/icon/firstColor.png"
         ],
@@ -456,17 +426,19 @@
             }
         ],
         "details":"Long cold shoulder dress in sheer, woven fabric with narrow shoulder straps and a wide flounce at the top. Gathered seams for added width. Partly lined.",
-        "length":"<strong>Length: </strong> Maxi",
-        "fit":"<strong>Fit: </strong> Regular fit",
-        "style" : "<strong>Style: </strong> Cold shoulder",
-        "sleeveStyle" : "<strong>Sleeve Style:</strong>  Sleeveless",
-        "color" : "<strong>Description: </strong> Cerise, Solid colour"
+        "length":"Length: Maxi",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Cold shoulder",
+        "sleeveStyle" : "Sleeve Style: Sleeveless",
+        "color" : "Description: Cerise, Solid colour"
     },
     {
         "name": "Pleated blouse",
         "price": 199,
         "discount": 140,
         "newItem": false,
+        "category":"clothes",
+        "type":"dresses",
         "colorIcon":[
             "/img/Product/Pleated blouse/icon/firstColor.png"
         ],
@@ -494,11 +466,1556 @@
             }
         ],
         "details":"Blouse in a pleated weave with a round, drawstring neckline and a V-shaped opening at the front. Loose fit with dropped shoulders and long balloon sleeves with narrow elastication at the cuffs. Overlocked hem.",
-        "length":"<strong>Length: </strong> Regular length",
-        "fit":"<strong>Fit: </strong> Loose fit",
-        "style" : "<strong>Style: </strong> Keyhole cutout",
-        "sleeveStyle" : "<strong>Sleeve Style:</strong> Balloon sleeve",
-        "color" : "<strong>Description: </strong> White, Solid colour"
+        "length":"Length: Regular length",
+        "fit":"Fit: Loose fit",
+        "style" : "Style: Keyhole cutout",
+        "sleeveStyle" : "Sleeve Style:Balloon sleeve",
+        "color" : "Description: White, Solid colour"
+    },
+    {
+        "name": "Long-sleeved top",
+        "price": 299,
+        "discount": 0,
+        "newItem": true,
+        "category":"clothes",
+        "type":"top",
+        "colorIcon":[
+            "/img/Product/Long-sleeved top/icon/firstColor.png",
+            "/img/Product/Long-sleeved top/icon/secondColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Long-sleeved top/firstColor/001.png",
+                    "/img/Product/Long-sleeved top/firstColor/002.png",
+                    "/img/Product/Long-sleeved top/firstColor/003.png",
+                    "/img/Product/Long-sleeved top/firstColor/004.png",
+                    "/img/Product/Long-sleeved top/firstColor/005.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Long-sleeved top/secondColor/001.png",
+                    "/img/Product/Long-sleeved top/secondColor/002.png",
+                    "/img/Product/Long-sleeved top/secondColor/003.png",
+                    "/img/Product/Long-sleeved top/secondColor/004.png",
+                    "/img/Product/Long-sleeved top/secondColor/005.png",
+                    "/img/Product/Long-sleeved top/secondColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Short, fitted top in soft jersey with a round neckline, long sleeves and a straight-cut hem.",
+        "length":"Length: Short",
+        "fit":"Fit: Slim fit",
+        "style" : "Style: Round neck",
+        "sleeveStyle" : "Long sleeve",
+        "color" : "Description: Dark grey, Solid color"
+    },
+    {
+        "name": "Oversized T-shirt",
+        "price": 79,
+        "discount": 0,
+        "newItem": false,
+        "category":"clothes",
+        "type":"top",
+        "colorIcon":[
+            "/img/Product/Oversized T-shirt/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Oversized T-shirt/firstColor/001.png",
+                    "/img/Product/Oversized T-shirt/firstColor/002.png",
+                    "/img/Product/Oversized T-shirt/firstColor/003.png",
+                    "/img/Product/Oversized T-shirt/firstColor/004.png",
+                    "/img/Product/Oversized T-shirt/firstColor/005.png",
+                    "/img/Product/Oversized T-shirt/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Oversized T-shirt in soft cotton jersey with a rib-trimmed neckline and low dropped shoulders.",
+        "length":"Length: Long",
+        "fit":"Fit: Oversized",
+        "style" : "Style: Round neck",
+        "sleeveStyle" : "Sleeve Style: Short sleeve",
+        "color" : "Description: Light grey marl, Solid color"
+    },
+    {
+        "name": "Boat-neck cotton top",
+        "price": 109,
+        "discount": 0,
+        "newItem": true,
+        "category":"clothes",
+        "type":"top",
+        "colorIcon":[
+            "/img/Product/Boat-neck cotton top/icon/firstColor.png",
+            "/img/Product/Boat-neck cotton top/icon/secondColor.png",
+            "/img/Product/Boat-neck cotton top/icon/thirdColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Boat-neck cotton top/firstColor/001.png",
+                    "/img/Product/Boat-neck cotton top/firstColor/002.png",
+                    "/img/Product/Boat-neck cotton top/firstColor/003.png",
+                    "/img/Product/Boat-neck cotton top/firstColor/004.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Boat-neck cotton top/secondColor/001.png",
+                    "/img/Product/Boat-neck cotton top/secondColor/002.png",
+                    "/img/Product/Boat-neck cotton top/secondColor/003.png",
+                    "/img/Product/Boat-neck cotton top/secondColor/004.png",
+                    "/img/Product/Boat-neck cotton top/secondColor/005.png",
+                    "/img/Product/Boat-neck cotton top/secondColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Boat-neck cotton top/thirdColor/001.png",
+                    "/img/Product/Boat-neck cotton top/thirdColor/002.png",
+                    "/img/Product/Boat-neck cotton top/thirdColor/003.png",
+                    "/img/Product/Boat-neck cotton top/thirdColor/004.png",
+                    "/img/Product/Boat-neck cotton top/thirdColor/005.png",
+                    "/img/Product/Boat-neck cotton top/thirdColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Loose-fit top in soft cotton jersey with a boat neckline, dropped shoulders and long sleeves.",
+        "length":"Length: Regular length",
+        "fit":"Fit: Loose fit",
+        "style" : "Style: Boat neck",
+        "sleeveStyle" : "sleeveStyle: Short sleeve",
+        "color" : "Description: White/Dark beige, Striped"
+    },
+    {
+        "name": "Boxy-style printed T-shirt",
+        "price": 109,
+        "discount": 0,
+        "newItem": false,
+        "category":"clothes",
+        "type":"top",
+        "colorIcon":[
+            "/img/Product/Boxy-style printed T-shirt/icon/firstColor.png",
+            "/img/Product/Boxy-style printed T-shirt/icon/secondColor.png",
+            "/img/Product/Boxy-style printed T-shirt/icon/thirdColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Boxy-style printed T-shirt/firstColor/001.png",
+                    "/img/Product/Boxy-style printed T-shirt/firstColor/002.png",
+                    "/img/Product/Boxy-style printed T-shirt/firstColor/003.png",
+                    "/img/Product/Boxy-style printed T-shirt/firstColor/004.png",
+                    "/img/Product/Boxy-style printed T-shirt/firstColor/005.png",
+                    "/img/Product/Boxy-style printed T-shirt/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Boxy-style printed T-shirt/secondColor/001.png",
+                    "/img/Product/Boxy-style printed T-shirt/secondColor/002.png",
+                    "/img/Product/Boxy-style printed T-shirt/secondColor/003.png",
+                    "/img/Product/Boxy-style printed T-shirt/secondColor/004.png",
+                    "/img/Product/Boxy-style printed T-shirt/secondColor/005.png",
+                    "/img/Product/Boxy-style printed T-shirt/secondColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Boxy-style printed T-shirt/thirdColor/001.png",
+                    "/img/Product/Boxy-style printed T-shirt/thirdColor/002.png",
+                    "/img/Product/Boxy-style printed T-shirt/thirdColor/003.png",
+                    "/img/Product/Boxy-style printed T-shirt/thirdColor/004.png",
+                    "/img/Product/Boxy-style printed T-shirt/thirdColor/005.png",
+                    "/img/Product/Boxy-style printed T-shirt/thirdColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Boxy-style T-shirt in soft, printed cotton jersey. Ribbed trim around the neckline and dropped shoulders.",
+        "length":"Length: Regular length",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Boxy",
+        "sleeveStyle" : "Neckline: Round neck",
+        "color" : "Description: Cream/Black/Blue/Red/Yellow/White, Disney, Mickey Mouse, horse, Mickey Mouse, Disney"
+    },
+    {
+        "name": "Loose-fit polo shirt",
+        "price": 159,
+        "discount": 0,
+        "newItem": false,
+        "category":"clothes",
+        "type":"top",
+        "colorIcon":[
+            "/img/Product/Loose-fit polo shirt/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Loose-fit polo shirt/firstColor/001.png",
+                    "/img/Product/Loose-fit polo shirt/firstColor/002.png",
+                    "/img/Product/Loose-fit polo shirt/firstColor/003.png",
+                    "/img/Product/Loose-fit polo shirt/firstColor/004.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Loose-fit polo shirt in cotton jersey with a collar and an open placket in woven fabric. Dropped shoulders, long sleeves and a straight-cut hem.",
+        "length":"Length: Regular length",
+        "fit":"Fit: Loose fit",
+        "style" : "Style:  Polo shirt",
+        "sleeveStyle" : "Sleeve Length: Long sleeve",
+        "color" : "Description: White/Navy blue, Striped"
+    },
+    {
+        "name": "Embroidery-detail polo shirt",
+        "price": 299,
+        "discount": 0,
+        "newItem": true,
+        "category":"clothes",
+        "type":"top",
+        "colorIcon":[
+            "/img/Product/Embroidery-detail polo shirt/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Embroidery-detail polo shirt/firstColor/001.png",
+                    "/img/Product/Embroidery-detail polo shirt/firstColor/002.png",
+                    "/img/Product/Embroidery-detail polo shirt/firstColor/003.png",
+                    "/img/Product/Embroidery-detail polo shirt/firstColor/004.png",
+                    "/img/Product/Embroidery-detail polo shirt/firstColor/005.png",
+                    "/img/Product/Embroidery-detail polo shirt/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Oversized polo shirt in cotton jersey with a collar and concealed button placket in twill. Embroidered text motif on the chest, dropped shoulders, long, cuffed sleeves and a straight-cut hem with a slit at each side.",
+        "length":"Length: Regular length",
+        "fit":"Fit: Oversized",
+        "style" : "Style:  Polo shirt",
+        "sleeveStyle" : "Collar:  Turn-down collar",
+        "color" : "Description: Black/White, Sport studios, New York, Block-coloured"
+    },
+    {
+        "name": "Draped jersey top",
+        "price": 129,
+        "discount": 0,
+        "newItem": true,
+        "category":"clothes",
+        "type":"top",
+        "colorIcon":[
+            "/img/Product/Draped jersey top/icon/firstColor.png",
+            "/img/Product/Draped jersey top/icon/secondColor.png",
+            "/img/Product/Draped jersey top/icon/thirdColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Draped jersey top/firstColor/001.png",
+                    "/img/Product/Draped jersey top/firstColor/002.png",
+                    "/img/Product/Draped jersey top/firstColor/003.png",
+                    "/img/Product/Draped jersey top/firstColor/004.png",
+                    "/img/Product/Draped jersey top/firstColor/005.png",
+                    "/img/Product/Draped jersey top/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Draped jersey top/secondColor/001.png",
+                    "/img/Product/Draped jersey top/secondColor/002.png",
+                    "/img/Product/Draped jersey top/secondColor/003.png",
+                    "/img/Product/Draped jersey top/secondColor/004.png",
+                    "/img/Product/Draped jersey top/secondColor/005.png",
+                    "/img/Product/Draped jersey top/secondColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Draped jersey top/thirdColor/001.png",
+                    "/img/Product/Draped jersey top/thirdColor/002.png",
+                    "/img/Product/Draped jersey top/thirdColor/003.png",
+                    "/img/Product/Draped jersey top/thirdColor/004.png",
+                    "/img/Product/Draped jersey top/thirdColor/005.png",
+                    "/img/Product/Draped jersey top/thirdColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Short, fitted top in stretch jersey with a cowl neckline, long sleeves and gathered side seams to create a draped effect.",
+        "length":"Length: Short",
+        "fit":"Fit: Slim fit",
+        "style" : "Style: Draped",
+        "sleeveStyle" : "Neckline: Cowl neck",
+        "color" : "Description: Black, Solid color"
+    },
+    {
+        "name": "Skinny High Jeans",
+        "price": 199,
+        "discount": 0,
+        "newItem": false,
+        "category":"clothes",
+        "type":"Jeans",
+        "colorIcon":[
+            "/img/Product/Skinny High Jeans/icon/firstColor.png",
+            "/img/Product/Skinny High Jeans/icon/secondColor.png",
+            "/img/Product/Skinny High Jeans/icon/thirdColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Skinny High Jeans/firstColor/001.png",
+                    "/img/Product/Skinny High Jeans/firstColor/002.png",
+                    "/img/Product/Skinny High Jeans/firstColor/003.png",
+                    "/img/Product/Skinny High Jeans/firstColor/004.png",
+                    "/img/Product/Skinny High Jeans/firstColor/005.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Skinny High Jeans/secondColor/001.png",
+                    "/img/Product/Skinny High Jeans/secondColor/002.png",
+                    "/img/Product/Skinny High Jeans/secondColor/003.png",
+                    "/img/Product/Skinny High Jeans/secondColor/004.png",
+                    "/img/Product/Skinny High Jeans/secondColor/005.png",
+                    "/img/Product/Skinny High Jeans/secondColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Skinny High Jeans/thirdColor/001.png",
+                    "/img/Product/Skinny High Jeans/thirdColor/002.png",
+                    "/img/Product/Skinny High Jeans/thirdColor/003.png",
+                    "/img/Product/Skinny High Jeans/thirdColor/004.png",
+                    "/img/Product/Skinny High Jeans/thirdColor/005.png",
+                    "/img/Product/Skinny High Jeans/thirdColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"5-pocket jeans in stretch denim with a skinny fit from the waist to the hem. High waist with a zip fly and button.",
+        "length":"Length: Long",
+        "fit":"Fit: Skinny fit",
+        "style" : "Waist Rise: High waist",
+        "sleeveStyle" : "Neckline: Cowl neck",
+        "color" : "Description: Black, Solid color"
+    },
+    {
+        "name": "Wide High Jeans",
+        "price": 249,
+        "discount": 0,
+        "newItem": true,
+        "category":"clothes",
+        "type":"Jeans",
+        "colorIcon":[
+            "/img/Product/Wide High Jeans/icon/firstColor.png",
+            "/img/Product/Wide High Jeans/icon/secondColor.png",
+            "/img/Product/Wide High Jeans/icon/thirdColor.png",
+            "/img/Product/Wide High Jeans/icon/forthColor.png",
+            "/img/Product/Wide High Jeans/icon/fifthColor.png",
+            "/img/Product/Wide High Jeans/icon/sixthColor.png",
+            "/img/Product/Wide High Jeans/icon/sevenColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Wide High Jeans/firstColor/001.png",
+                    "/img/Product/Wide High Jeans/firstColor/002.png",
+                    "/img/Product/Wide High Jeans/firstColor/003.png",
+                    "/img/Product/Wide High Jeans/firstColor/004.png",
+                    "/img/Product/Wide High Jeans/firstColor/005.png",
+                    "/img/Product/Wide High Jeans/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Wide High Jeans/secondColor/001.png",
+                    "/img/Product/Wide High Jeans/secondColor/002.png",
+                    "/img/Product/Wide High Jeans/secondColor/003.png",
+                    "/img/Product/Wide High Jeans/secondColor/004.png",
+                    "/img/Product/Wide High Jeans/secondColor/005.png",
+                    "/img/Product/Wide High Jeans/secondColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Wide High Jeans/thirdColor/001.png",
+                    "/img/Product/Wide High Jeans/thirdColor/002.png",
+                    "/img/Product/Wide High Jeans/thirdColor/003.png",
+                    "/img/Product/Wide High Jeans/thirdColor/004.png",
+                    "/img/Product/Wide High Jeans/thirdColor/005.png",
+                    "/img/Product/Wide High Jeans/thirdColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "forthColor",
+                "image": [
+                    "/img/Product/Wide High Jeans/forthColor/001.png",
+                    "/img/Product/Wide High Jeans/forthColor/002.png",
+                    "/img/Product/Wide High Jeans/forthColor/003.png",
+                    "/img/Product/Wide High Jeans/forthColor/004.png",
+                    "/img/Product/Wide High Jeans/forthColor/005.png",
+                    "/img/Product/Wide High Jeans/forthColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "fifthColor",
+                "image": [
+                    "/img/Product/Wide High Jeans/fifthColor/001.png",
+                    "/img/Product/Wide High Jeans/fifthColor/002.png",
+                    "/img/Product/Wide High Jeans/fifthColor/003.png",
+                    "/img/Product/Wide High Jeans/fifthColor/004.png",
+                    "/img/Product/Wide High Jeans/fifthColor/005.png",
+                    "/img/Product/Wide High Jeans/fifthColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "sixthColor",
+                "image": [
+                    "/img/Product/Wide High Jeans/sixthColor/001.png",
+                    "/img/Product/Wide High Jeans/sixthColor/002.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "sevenColor",
+                "image": [
+                    "/img/Product/Wide High Jeans/sevenColor/001.png",
+                    "/img/Product/Wide High Jeans/sevenColor/002.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"5-pocket jeans in washed cotton denim with a high waist, zip fly and button and wide, straight legs.",
+        "length":"Length: Long",
+        "fit":"Fit: Slim fit",
+        "style" : "Waist Rise: High waist",
+        "sleeveStyle" : "Neckline: Cowl neck",
+        "color" : "Description: Light denim blue, Solid colour"
+    },
+    {
+        "name": "Slim Straight High Ankle Jeans",
+        "price": 249,
+        "discount": 0,
+        "newItem": false,
+        "category":"clothes",
+        "type":"Jeans",
+        "colorIcon":[
+            "/img/Product/Slim Straight High Ankle Jeans/icon/firstColor.png",
+            "/img/Product/Slim Straight High Ankle Jeans/icon/secondColor.png",
+            "/img/Product/Slim Straight High Ankle Jeans/icon/thirdColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Slim Straight High Ankle Jeans/firstColor/001.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/firstColor/002.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/firstColor/003.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/firstColor/004.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/firstColor/005.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Slim Straight High Ankle Jeans/secondColor/001.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/secondColor/002.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/secondColor/003.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/secondColor/004.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/secondColor/005.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/secondColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Slim Straight High Ankle Jeans/thirdColor/001.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/thirdColor/002.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/thirdColor/003.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/thirdColor/004.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/thirdColor/005.png",
+                    "/img/Product/Slim Straight High Ankle Jeans/thirdColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"5-pocket, slim-fit jeans in slightly stretchy cotton denim with a high waist, zip fly and button and straight, ankle-length legs.",
+        "length":"Length: Long",
+        "fit":"Fit: Slim fit",
+        "style" : "Waist Rise: High waist",
+        "sleeveStyle" : "Style: Straight leg",
+        "color" : "Description: Denim blue, Solid color"
+    },
+    {
+        "name": "Straight Jeans",
+        "price": 379,
+        "discount": 0,
+        "newItem": true,
+        "category":"clothes",
+        "type":"Jeans",
+        "colorIcon":[
+            "/img/Product/Straight Jeans/icon/firstColor.png",
+            "/img/Product/Straight Jeans/icon/secondColor.png",
+            "/img/Product/Straight Jeans/icon/thirdColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Straight Jeans/firstColor/001.png",
+                    "/img/Product/Straight Jeans/firstColor/002.png",
+                    "/img/Product/Straight Jeans/firstColor/003.png",
+                    "/img/Product/Straight Jeans/firstColor/004.png",
+                    "/img/Product/Straight Jeans/firstColor/005.png",
+                    "/img/Product/Straight Jeans/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Straight Jeans/secondColor/001.png",
+                    "/img/Product/Straight Jeans/secondColor/002.png",
+                    "/img/Product/Straight Jeans/secondColor/003.png",
+                    "/img/Product/Straight Jeans/secondColor/004.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Straight Jeans/thirdColor/001.png",
+                    "/img/Product/Straight Jeans/thirdColor/002.png",
+                    "/img/Product/Straight Jeans/thirdColor/003.png",
+                    "/img/Product/Straight Jeans/thirdColor/004.png",
+                    "/img/Product/Straight Jeans/thirdColor/005.png",
+                    "/img/Product/Straight Jeans/thirdColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"5-pocket jeans in sturdy denim made from a cotton and viscose blend. High waist, a button fly and straight legs.",
+        "length":"Length: Long",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Straight leg",
+        "sleeveStyle" : "Waist Rise: High waist",
+        "color" : "Description: Denim blue, Solid color."
+    },
+    {
+        "name": "Wide Turn-Up Jeans",
+        "price": 549,
+        "discount": 0,
+        "newItem": false,
+        "category":"clothes",
+        "type":"Jeans",
+        "colorIcon":[
+            "/img/Product/Wide turn-up jeans/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Wide turn-up jeans/firstColor/001.png",
+                    "/img/Product/Wide turn-up jeans/firstColor/002.png",
+                    "/img/Product/Wide turn-up jeans/firstColor/003.png",
+                    "/img/Product/Wide turn-up jeans/firstColor/004.png",
+                    "/img/Product/Wide turn-up jeans/firstColor/005.png",
+                    "/img/Product/Wide turn-up jeans/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"5-pocket jeans in cotton denim with a regular waist and a zip fly and button. Wide legs with creases down the front and back and a wide turn-up at the hems.",
+        "length":"Length: Long",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Wide leg",
+        "sleeveStyle" : "Concept: H&M EDITION",
+        "color" : "Description: Denim blue, Solid color."
+    },
+    {
+        "name": "Wide High Cropped Jeans",
+        "price": 229,
+        "discount": 0,
+        "newItem": true,
+        "category":"clothes",
+        "type":"Jeans",
+        "colorIcon":[
+            "/img/Product/Wide High Cropped Jeans/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Wide High Cropped Jeans/firstColor/001.png",
+                    "/img/Product/Wide High Cropped Jeans/firstColor/002.png",
+                    "/img/Product/Wide High Cropped Jeans/firstColor/003.png",
+                    "/img/Product/Wide High Cropped Jeans/firstColor/004.png",
+                    "/img/Product/Wide High Cropped Jeans/firstColor/005.png",
+                    "/img/Product/Wide High Cropped Jeans/firstColor/006.png",
+                    "/img/Product/Wide High Cropped Jeans/firstColor/007.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Jeans in cotton denim with a slight stretch for good comfort. Wide leg with a regular fit from the waist to the hip and a wide cut from the thigh to the hem. High waist with a zip fly and button. Patch back pockets. Cropped length, designed to hit above the ankle bone and show the ankle. The wide-leg jean is a wardrobe essential.",
+        "length":"Length: Cropped",
+        "fit":"Fit: Regular fit",
+        "style" : "Style: Wide leg",
+        "sleeveStyle" : "Waist Rise: High waist",
+        "color" : "Description: Dark denim blue, Solid color."
+    },
+    {
+        "name": "Teddy sports gilet",
+        "price": 299,
+        "discount": 0,
+        "newItem": true,
+        "category":"sports",
+        "type":"Jackets & Gilets",
+        "colorIcon":[
+            "/img/Product/Teddy sports gilet/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Teddy sports gilet/firstColor/001.png",
+                    "/img/Product/Teddy sports gilet/firstColor/002.png",
+                    "/img/Product/Teddy sports gilet/firstColor/003.png",
+                    "/img/Product/Teddy sports gilet/firstColor/004.png",
+                    "/img/Product/Teddy sports gilet/firstColor/005.png",
+                    "/img/Product/Teddy sports gilet/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Sports gilet in soft, warming teddy with elasticated bindings. Regular fit with a high collar, zip down the front, zipped chest pocket, open side pockets and a rounded hem that is longer at the back. Unlined.",
+        "length":"Length: Regular length",
+        "fit":"Fit: Regular fit",
+        "style" : "Collar: High collar",
+        "sleeveStyle" : "Sports activity: Hiking",
+        "color" : "Description: Sage green, Solid color."
+    },
+    {
+        "name": "Mid layer jacket",
+        "price": 449,
+        "discount": 0,
+        "newItem": false,
+        "category":"sports",
+        "type":"Jackets & Gilets",
+        "colorIcon":[
+            "/img/Product/Mid layer jacket/icon/firstColor.png",
+            "/img/Product/Mid layer jacket/icon/secondColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Mid layer jacket/firstColor/001.png",
+                    "/img/Product/Mid layer jacket/firstColor/002.png",
+                    "/img/Product/Mid layer jacket/firstColor/003.png",
+                    "/img/Product/Mid layer jacket/firstColor/004.png",
+                    "/img/Product/Mid layer jacket/firstColor/005.png",
+                    "/img/Product/Mid layer jacket/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Mid layer jacket/secondColor/001.png",
+                    "/img/Product/Mid layer jacket/secondColor/002.png",
+                    "/img/Product/Mid layer jacket/secondColor/003.png",
+                    "/img/Product/Mid layer jacket/secondColor/004.png",
+                    "/img/Product/Mid layer jacket/secondColor/005.png",
+                    "/img/Product/Mid layer jacket/secondColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Jacket in stretchy jersey with a soft brushed inside that can be worn as it is or as an insulating mid layer. Regular fit with a lined hood and a zip down the front with an anti-chafe chin guard. Long raglan sleeves with thumbholes, a zipped chest pocket and zipped side pockets for safe storage of valuables. Unlined.",
+        "length":"Length: Regular length",
+        "fit":"Sleeve Length: Long sleeve",
+        "style" : "Fit: Regular fit",
+        "sleeveStyle" : "Sports activity: Hiking, Skiing",
+        "color" : "Brown, Solid color."
+    },
+    {
+        "name": "Hybrid down jacket with ThermoMove™",
+        "price": 449,
+        "discount": 0,
+        "newItem": true,
+        "category":"sports",
+        "type":"Jackets & Gilets",
+        "colorIcon":[
+            "/img/Product/Hybrid down jacket with ThermoMove/icon/firstColor.png",
+            "/img/Product/Hybrid down jacket with ThermoMove/icon/secondColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Hybrid down jacket with ThermoMove/firstColor/001.png",
+                    "/img/Product/Hybrid down jacket with ThermoMove/firstColor/002.png",
+                    "/img/Product/Hybrid down jacket with ThermoMove/firstColor/003.png",
+                    "/img/Product/Hybrid down jacket with ThermoMove/firstColor/004.png",
+                    "/img/Product/Hybrid down jacket with ThermoMove/firstColor/005.png",
+                    "/img/Product/Hybrid down jacket with ThermoMove/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Hybrid down jacket with ThermoMove/secondColor/001.png",
+                    "/img/Product/Hybrid down jacket with ThermoMove/secondColor/002.png",
+                    "/img/Product/Hybrid down jacket with ThermoMove/secondColor/003.png",
+                    "/img/Product/Hybrid down jacket with ThermoMove/secondColor/004.png",
+                    "/img/Product/Hybrid down jacket with ThermoMove/secondColor/005.png",
+                    "/img/Product/Hybrid down jacket with ThermoMove/secondColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"H&M Premium Selection<br>Hybrid jacket in stretchy fabric and padded panels in functional fabric made with ThermoMove™ that keeps you warm when the temperature drops. Regular fit with a lined hood and a zip down the front with an anti-chafe chin guard. Extra-long raglan sleeves with a thumbhole at the cuffs, open inner pockets and zipped side pockets for safe storage of valuables. Elasticated trims around the hood, cuffs and hem. The jacket has a down and feather filling. Lined.",
+        "length":"Length: Regular length",
+        "fit":"Sleeve Length: Extra long sleeve",
+        "style" : "Fit: Regular fit",
+        "sleeveStyle" : "Sports activity: Hiking, Skiing",
+        "color" : "Black, Solid color."
+    },
+    {
+        "name": "Cropped Sports vest top in DryMove",
+        "price": 129,
+        "discount": 0,
+        "newItem": false,
+        "category":"sports",
+        "type":"Sport Yoga & Studio",
+        "colorIcon":[
+            "/img/Product/Cropped Sports vest top in DryMove/icon/firstColor.png",
+            "/img/Product/Cropped Sports vest top in DryMove/icon/secondColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Cropped Sports vest top in DryMove/firstColor/001.png",
+                    "/img/Product/Cropped Sports vest top in DryMove/firstColor/002.png",
+                    "/img/Product/Cropped Sports vest top in DryMove/firstColor/003.png",
+                    "/img/Product/Cropped Sports vest top in DryMove/firstColor/004.png",
+                    "/img/Product/Cropped Sports vest top in DryMove/firstColor/005.png",
+                    "/img/Product/Cropped Sports vest top in DryMove/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Cropped Sports vest top in DryMove/secondColor/001.png",
+                    "/img/Product/Cropped Sports vest top in DryMove/secondColor/002.png",
+                    "/img/Product/Cropped Sports vest top in DryMove/secondColor/003.png",
+                    "/img/Product/Cropped Sports vest top in DryMove/secondColor/004.png",
+                    "/img/Product/Cropped Sports vest top in DryMove/secondColor/005.png",
+                    "/img/Product/Cropped Sports vest top in DryMove/secondColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"H&M Premium Selection<br>Hybrid jacket in stretchy fabric and padded panels in functional fabric made with ThermoMove™ that keeps you warm when the temperature drops. Regular fit with a lined hood and a zip down the front with an anti-chafe chin guard. Extra-long raglan sleeves with a thumbhole at the cuffs, open inner pockets and zipped side pockets for safe storage of valuables. Elasticated trims around the hood, cuffs and hem. The jacket has a down and feather filling. Lined.",
+        "length":"Length: Regular length",
+        "fit":"Sleeve Length: Extra long sleeve",
+        "style" : "Fit: Regular fit",
+        "sleeveStyle" : "Sports activity: Hiking, Skiing",
+        "color" : "Description: Black, Solid color."
+    },
+    {
+        "name": "Sports leggings in DryMove",
+        "price": 199,
+        "discount": 0,
+        "newItem": false,
+        "category":"sports",
+        "type":"Sport Yoga & Studio",
+        "colorIcon":[
+            "/img/Product/Sports leggings in DryMove/icon/firstColor.png",
+            "/img/Product/Sports leggings in DryMove/icon/secondColor.png",
+            "/img/Product/Sports leggings in DryMove/icon/thirdColor.png",
+            "/img/Product/Sports leggings in DryMove/icon/forthColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Sports leggings in DryMove/firstColor/001.png",
+                    "/img/Product/Sports leggings in DryMove/firstColor/002.png",
+                    "/img/Product/Sports leggings in DryMove/firstColor/003.png",
+                    "/img/Product/Sports leggings in DryMove/firstColor/004.png",
+                    "/img/Product/Sports leggings in DryMove/firstColor/005.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Sports leggings in DryMove/secondColor/001.png",
+                    "/img/Product/Sports leggings in DryMove/secondColor/002.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Sports leggings in DryMove/thirdColor/001.png",
+                    "/img/Product/Sports leggings in DryMove/thirdColor/002.png",
+                    "/img/Product/Sports leggings in DryMove/thirdColor/003.png",
+                    "/img/Product/Sports leggings in DryMove/thirdColor/004.png",
+                    "/img/Product/Sports leggings in DryMove/thirdColor/005.png",
+                    "/img/Product/Sports leggings in DryMove/thirdColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "forthColor",
+                "image": [
+                    "/img/Product/Sports leggings in DryMove/forthColor/001.png",
+                    "/img/Product/Sports leggings in DryMove/forthColor/002.png",
+                    "/img/Product/Sports leggings in DryMove/forthColor/003.png",
+                    "/img/Product/Sports leggings in DryMove/forthColor/004.png",
+                    "/img/Product/Sports leggings in DryMove/forthColor/005.png",
+                    "/img/Product/Sports leggings in DryMove/forthColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Sports leggings in DryMove™ functional fabric that helps to wick away moisture from your skin, keeping you comfortably dry while you move. High waist with a wide waist panel containing a concealed mobile phone pocket at the back.",
+        "length":"Length: Long",
+        "fit":"Waist Rise: High waist",
+        "style" : "Functions: Moisture-wicking",
+        "sleeveStyle" : "Sports activity: Training",
+        "color" : "Description: Dark khaki green, Solid color"
+    },
+    {
+        "name": "Sports cycling shorts",
+        "price": 129,
+        "discount": 40,
+        "newItem": false,
+        "category":"sports",
+        "type":"Sport Yoga & Studio",
+        "colorIcon":[
+            "/img/Product/Sports cycling shorts/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Sports cycling shorts/firstColor/001.png",
+                    "/img/Product/Sports cycling shorts/firstColor/002.png",
+                    "/img/Product/Sports cycling shorts/firstColor/003.png",
+                    "/img/Product/Sports cycling shorts/firstColor/004.png",
+                    "/img/Product/Sports cycling shorts/firstColor/005.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Knee-length sports cycling shorts in fast-drying functional fabric designed to help keep you dry and cool while exercising. High waist with a wide waist panel containing a concealed pocket for safe storage of valuables.",
+        "length":"Length: Knee length",
+        "fit":"Waist Rise: High waist",
+        "style" : "Fit: Slim fit",
+        "sleeveStyle" : "Sports activity: Training",
+        "color" : "Description: Black, Solid color."
+    },
+    {
+        "name": "Oversized sports sweatshirt",
+        "price": 249,
+        "discount": 0,
+        "newItem": false,
+        "category":"sports",
+        "type":"Women's Sports Hoodies",
+        "colorIcon":[
+            "/img/Product/Oversized sports sweatshirt/icon/firstColor.png",
+            "/img/Product/Oversized sports sweatshirt/icon/secondColor.png",
+            "/img/Product/Oversized sports sweatshirt/icon/thirdColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Oversized sports sweatshirt/firstColor/001.png",
+                    "/img/Product/Oversized sports sweatshirt/firstColor/002.png",
+                    "/img/Product/Oversized sports sweatshirt/firstColor/003.png",
+                    "/img/Product/Oversized sports sweatshirt/firstColor/004.png",
+                    "/img/Product/Oversized sports sweatshirt/firstColor/005.png",
+                    "/img/Product/Oversized sports sweatshirt/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Oversized sports sweatshirt/secondColor/001.png",
+                    "/img/Product/Oversized sports sweatshirt/secondColor/002.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "thirdColor",
+                "image": [
+                    "/img/Product/Oversized sports sweatshirt/thirdColor/001.png",
+                    "/img/Product/Oversized sports sweatshirt/thirdColor/002.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Oversized top in lightweight cotton sweatshirt fabric with a fast-drying function. Round neckline, dropped shoulders, long sleeves and ribbing around the neckline, cuffs and hem.",
+        "length":"Length: Regular length",
+        "fit":"Sleeve Length: Long sleeve",
+        "style" : "Fit: Regular fit",
+        "sleeveStyle" : "Sports activity: Padel, Tennis, Training",
+        "color" : "Description: Khaki green, Solid color."
+    },
+    {
+        "name": "Oversized sports hoodie",
+        "price": 249,
+        "discount": 0,
+        "newItem": false,
+        "category":"sports",
+        "type":"Women's Sports Hoodies",
+        "colorIcon":[
+            "/img/Product/Oversized sports hoodie/icon/firstColor.png",
+            "/img/Product/Oversized sports hoodie/icon/secondColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Oversized sports hoodie/firstColor/001.png",
+                    "/img/Product/Oversized sports hoodie/firstColor/002.png",
+                    "/img/Product/Oversized sports hoodie/firstColor/003.png",
+                    "/img/Product/Oversized sports hoodie/firstColor/004.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Oversized sports hoodie/secondColor/001.png",
+                    "/img/Product/Oversized sports hoodie/secondColor/002.png",
+                    "/img/Product/Oversized sports hoodie/secondColor/003.png",
+                    "/img/Product/Oversized sports hoodie/secondColor/004.png",
+                    "/img/Product/Oversized sports hoodie/secondColor/005.png",
+                    "/img/Product/Oversized sports hoodie/secondColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Oversized sports hoodie in sweatshirt fabric with a soft brushed inside. Lined hood with a wrapover front, low dropped shoulders, long sleeves and ribbing at the cuffs and hem.",
+        "length":"Length: Regular length",
+        "fit":"Sleeve Length: Long sleeve",
+        "style" : "Fit: Oversized",
+        "sleeveStyle" : "Sports activity: Training",
+        "color" : "Description: Grey marl/Black, Active Sports Club"
+    },
+    {
+        "name": "Cropped sweatshirt",
+        "price": 249,
+        "discount": 0,
+        "newItem": false,
+        "category":"sports",
+        "type":"Women's Sports Hoodies",
+        "colorIcon":[
+            "/img/Product/Cropped sweatshirt/icon/firstColor.png",
+            "/img/Product/Cropped sweatshirt/icon/secondColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Cropped sweatshirt/firstColor/001.png",
+                    "/img/Product/Cropped sweatshirt/firstColor/002.png",
+                    "/img/Product/Cropped sweatshirt/firstColor/003.png",
+                    "/img/Product/Cropped sweatshirt/firstColor/004.png",
+                    "/img/Product/Cropped sweatshirt/firstColor/005.png",
+                    "/img/Product/Cropped sweatshirt/firstColor/006.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            },
+            {
+                "color": "secondColor",
+                "image": [
+                    "/img/Product/Cropped sweatshirt/secondColor/001.png",
+                    "/img/Product/Cropped sweatshirt/secondColor/002.png"
+                ],
+                "Unit": [
+                    {"size": 32, "qty": 10},
+                    {"size": 34, "qty": 10},
+                    {"size": 36, "qty": 10},
+                    {"size": 38, "qty": 10},
+                    {"size": 40, "qty": 10},
+                    {"size": 42, "qty": 10},
+                    {"size": 44, "qty": 10},
+                    {"size": 46, "qty": 10}
+                ]
+            }
+        ],
+        "details":"Cropped top in lightweight sweatshirt fabric. Regular fit with a round neckline, dropped shoulders and long, voluminous sleeves. Ribbing around the neckline, cuffs and hem.",
+        "length":"Length: Cropped",
+        "fit":"Sleeve Length: Long sleeve",
+        "style" : "Fit: Regular fit",
+        "sleeveStyle" : "Style: Sweatshirt",
+        "color" : "Description: Dusty yellow, Solid color."
+    },
+    {
+        "name": "Fringed shoulder bag",
+        "price": 299,
+        "discount": 0,
+        "newItem": true,
+        "category":"accessories",
+        "type":"shoulder Bag",
+        "colorIcon":[
+            "/img/Product/Fringed shoulder bag/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/Fringed shoulder bag/firstColor/001.png",
+                    "/img/Product/Fringed shoulder bag/firstColor/002.png",
+                    "/img/Product/Fringed shoulder bag/firstColor/003.png",
+                    "/img/Product/Fringed shoulder bag/firstColor/004.png"
+                ],
+                "Unit": [
+                    {"size": "Regalur", "qty": 10}
+                ]
+            }
+        ],
+        "details":"Shoulder bag in coated fabric with a zip at the top, strap and metal buckle at the front and a short shoulder strap. Long fringes attached to the zip pull and shoulder strap. Taffeta lining.",
+        "length":"Size: Depth: 36.0 cm, Width: 7.0 cm, Height: 36.0 cm",
+        "fit":"Weight: 455g",
+        "style" : "Accessory Style: Shoulder bag",
+        "sleeveStyle" : "Description: Black, Solid color.",
+        "color" : "Concept: DIVIDED"
+    },
+    {
+        "name": "Bucket bag",
+        "price": 249,
+        "discount": 0,
+        "newItem": true,
+        "category":"accessories",
+        "type":"Bucket bag",
+        "colorIcon":[
+            "img/Product/bucketbag/icon/firstColor.png"
+        ],
+        "sku": [
+            {
+                "color": "firstColor",
+                "image": [
+                    "/img/Product/bucketbag/firstColor/001.png",
+                    "/img/Product/bucketbag/firstColor/002.png",
+                    "/img/Product/bucketbag/firstColor/003.png",
+                    "/img/Product/bucketbag/firstColor/004.png"
+                ],
+                "Unit": [
+                    {"size": "Regular", "qty": 10}
+                ]
+            }
+        ],
+        "details":"Bucket bag in napped fabric featuring a wide, adjustable shoulder strap with a metal buckle and a concealed magnetic fastener at the top. Depth 17 cm. Width 27 cm. Height 32 cm.",
+        "length":"Size: Width: 27.0 cm, Depth: 17.0 cm, Height: 32.0 cm",
+        "fit":"Weight: 512g",
+        "style" : "Accessory Style: Bucket bag",
+        "sleeveStyle" : "Description: Black, Solid color.",
+        "color" : "Concept: DIVIDED"
     }
 
     
