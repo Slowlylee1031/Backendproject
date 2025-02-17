@@ -7,6 +7,7 @@ const sessionRouter = require('./routers/session')
 const adminRouter = require('./routers/admin')
 const productRouter = require('./routers/product')
 const productEditRouter = require('./routers/productEdit')
+const categoryRouter = require('./routers/category')
 const initData = require('./models/init')
 
 const app = express()
@@ -68,7 +69,7 @@ async function startAPI() {
     app.use('/api/admin', adminRouter)
     app.use('/api/products', productRouter)
     app.use('/api/productEdit', productEditRouter)    
-    app.use('/api/categories', productRouter)    
+    app.use('/api/categories', categoryRouter)    
 
     // static content
     app.use(express.static(__dirname + '/public'))

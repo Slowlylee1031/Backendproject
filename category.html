@@ -54,9 +54,9 @@
 
     let categoriesData = [];
     let urlParams = new URLSearchParams(window.location.search);
-    // console.log('url',  urlParams.toLowerCase().get('categories'));
+    console.log('url',  urlParams.get('category'));
 
-    fetch('/api/categories/' + urlParams.get('category'))
+    fetch('/api/categories/' + urlParams.get('type'))
         .then(res => res.json())
         .then(data => {
             console.log('data', data);
