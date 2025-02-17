@@ -4,8 +4,9 @@ const session = require('express-session')
 const MongoDBStore = require('connect-mongodb-session')(session)
 const userRouter = require('./routers/user')
 const sessionRouter = require('./routers/session')
-const productRouter = require('./routers/product')
 const adminRouter = require('./routers/admin')
+const productRouter = require('./routers/product')
+const productEditRouter = require('./routers/productEdit')
 const initData = require('./models/init')
 
 const app = express()
@@ -64,8 +65,10 @@ async function startAPI() {
     // api routes
     app.use('/api/users', userRouter)
     app.use('/api/sessions', sessionRouter)
-    app.use('/api/products', productRouter)    
-    app.use('/api/admin', adminRouter)    
+    app.use('/api/admin', adminRouter)
+    app.use('/api/products', productRouter)
+    app.use('/api/productEdit', productEditRouter)    
+    app.use('/api/categories', productRouter)    
 
     // static content
     app.use(express.static(__dirname + '/public'))
