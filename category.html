@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatti</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz@0,8..60;1,8..60&display=swap"
+        rel="stylesheet">
+    <link href="css/header_footer.css" rel="stylesheet">
+    <link href="css/shop.css" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script type="module" src="js/axios.min.js"></script>
+    <!-- https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js -->
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="include-header"></div>
+
+    <main class="main container">
+        <div id="searchBar">
+            <div class="search container">
+                <h2>Shop Your favour products</h2>
+                <input type="search" id="search-input" placeholder="search product">
+            </div>
+            <div id="catergories">
+                 <!-- <button class="button-value" onclick="filterProduct('all')">All</button> -->
+                 <span id="other-type"></span>
+            </div>
+        </div>
+
+        <!-- Card container -->
+        <section id="product-container"></section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <div id="include-footer"></div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        // included Header and Footer
+        $("#include-header").load("inc_header.html");
+        $("#include-footer").load("inc_footer.html");
+    });
+
+    let categoriesData = [];
+    let urlParams = new URLSearchParams(window.location.search);
+    // console.log('url',  urlParams.toLowerCase().get('categories'));
+
+    fetch('/api/categories/' + urlParams.get('category'))
+        .then(res => res.json())
+        .then(data => {
+            console.log('data', data);
+            categoriesData = data;
+            // displayItems(categoryData);
+        })
+        .catch(error => console.error('Error fetching products:', error));
+// loop type of button
+// let type = '';
+// let record = [];
+// for(let i = 0 ; i <items.length ; i++){
+//     type = items[i].type;
+//     if(!record === 'true'){
+//         record.push(type)
+//     }
+// }
+
+// // Create product cards
+// let cards = [];
+// function displayItems(items) {
+//     cards = []; 
+//     for (let i = 0; i < items.length; i++) {
+//         let productID = items[i]._id;
+//         let productName = items[i].name;
+//         let price = items[i].discount > 0 ? items[i].discount : items[i].price;
+//         let discountClass = items[i].discount > 0 ? 'discount-true' : '';
+//         let image = items[i].colorIcon[0];
+//         let productCategory = items[i].category;
+//         let newItemClass = items[i].newItem ? 'new-item' : '';
+//         let card = `
+//             <div class="productCard ${productCategory} ${newItemClass} ${discountClass}" onclick="productDetails('${productName}')">
+//                 <div class="image-container">
+//                     <img src="${image}" alt="${productName}">
+//                 </div>
+//                 <div class="productInfo" id="${productID}">
+//                     <h6>${productName}</h6>
+//                     <h4>$${price}</h4>
+//                 </div>
+//                 <button class="details" onclick="productDetails('${productName}')">Details</button>
+//             </div>
+//         `;
+//         cards.push(card);
+//     }
+//     document.getElementById("product-container").innerHTML = cards.join('');
+// }
+
+// // Navigate to product detail page
+// function productDetails(name) {
+//     window.location.href = `product.html?name=${name}`;
+// }
+
+// // Search functionality
+// document.getElementById('search-input').addEventListener('keyup', (e) => {
+//     const searchData = e.target.value.toLowerCase();
+//     const filterData = items.filter((item) => {
+//         return item.name.toLowerCase().includes(searchData);
+//     });
+//     displayItems(filterData);
+// });
+
+// // Filter products based on category or discount
+// function filterProduct(value) {
+//     let buttons = document.querySelectorAll('.button-value');
+//     buttons.forEach((button) => {
+//         if (value.toUpperCase() === button.innerText.toUpperCase()) {
+//             button.classList.add('clicked');
+//         } else {
+//             button.classList.remove('clicked');
+//         }
+//     });
+
+//     let elements = document.querySelectorAll('.productCard');
+
+//     elements.forEach((element) => {
+//         if (value === 'all') {
+//             element.classList.remove('hide');
+//         } else if (value === 'news') {
+//             if (element.classList.contains('new-item')) {
+//                 element.classList.remove('hide');
+//             } else {
+//                 element.classList.add('hide');
+//             }
+//         } else if (value === 'discount') {
+//             if (element.classList.contains('discount-true')) {
+//                 element.classList.remove('hide');
+//             } else {
+//                 element.classList.add('hide');
+//             }
+//         } else {
+//             if (element.classList.contains(value)) {
+//                 element.classList.remove('hide');
+//             } else {
+//                 element.classList.add('hide');
+//             }
+//         }
+//     });
+// }
+
+// // Initialize filter to show all products on page load
+// window.onload = () => {
+//     filterProduct('all');
+// };
+
+</script>
+
+</html>

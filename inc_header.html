@@ -2,117 +2,283 @@
 	<section class="desktop">
 		<div class="container">
 			<a href="index.html" rel="homepage" alt="Home page">
-				<img class="logo" src="img/local/logo.png">
+				<img class="logo" src="/img/local/logo.png">
 			</a>
 			<ul>
 				<li>News</li>
-				<li>Clothes</li>
-				<li>Pants</li>
-				<li>Underwear</li>
-				<li>Accessories</li>
+				<div id="dropdown-container"></div>
+				<li onmouseover="getCommon('clothes')" onmouseup="closeDropdown()">Clothes</li>
+				<li onmouseover="getCommon('sports')" onmouseup="closeDropdown()">Sports</li>
+				<li onmouseover="getCommon('accessories')" onmouseup="closeDropdown()">Accessories</li>
+				<li><a href="shop.html">Shop</a></li>
+				<li>Contact Us</li>
 			</ul>
 			<div class="icon">
-				<img src="img/local/bag.png" class="bag">
-				<a id="setting" opacity="0.3"><img id="settingpng" src="img/local/setting-blur.png" class="setting"></a>
+				<div class="shoppingBag">
+					<img src="/img/local/bag.png" class="bag" onmouseover="showCart()"  onclick="closeCart()"></a>
+					<div id="itemCount"></div>
+				</div>
+
+				<a id="setting" href="profile.html"><img id="settingpng" src="/img/local/setting.png" class="setting"
+						style="opacity: 1;"></a>
 				<nav class="login">
-					<div id="beforelogin"><a href="login.html">Login</a><span>/</span><a href="signup.html">Sign Up</a></div>
-					<div id="afterlogin"><a onclick="logout(); return false" href="#">Logout</a><span>/</span><a onclick="inactivate(); return false" href="#">Inactivate</a></div>
+					<div id="beforelogin"><a href="login.html">Login</a><span>/</span><a href="signup.html">Sign Up</a>
+					</div>
+					<div id="afterlogin"><a onclick="logout(); return false" href="#">Logout</a><span>/</span><a
+							onclick="inactivate(); return false" href="#">Inactivate</a></div>
 				</nav>
 			</div>
 		</div>
-	</section>
-	<section class="mobile">
-		<div class="container">
-			<a href="index.html" rel="homepage" alt="Home page">
-				<img class="logo" src="img/local/logo.png">
-			</a>
-			<div>
-				<div class="icon">
-					<img src="img/local/bag.png" class="bag">
-					<img src="img/local/setting.png" class="setting">
-				</div>
-				<div class="burger">
-					<img src="img/local/Burger.svg" class="default">
-					<img src="img/local/Close menu.svg" class="close-menu">
-					<ul>
-						<li>News</li>
-						<li>Clothes</li>
-						<li>Pants</li>
-						<li>Underwear</li>
-						<li>Accessories</li>
-					</ul>
-				</div>
-				
-			</div>
-		</div>
+		<div id="cart-container">
+			<div><h4>Shopping Cart</h4></div>
+			<div id="cart"></div>
+		</div>	
 	</section>
 </header>
 
-	<script>
-		async function logout() {
-			try {
-				const response = await axios.get('/api/sessions/logout')
-				const name = response.data.name;
-				document.getElementById("main").classList.remove("container")
-				document.getElementById("main").innerHTML = `<h1 style="margin: 45px 10px;">Logout<h1><h2>You (${name}) have successfully logged out<h2>`
-				document.getElementById("main").style.height = "300px"
-				document.getElementById("main").style.textAlign = "center"
-				$("#beforelogin").show()
-				$("#afterlogin").hide()
-				$("#setting").removeAttr("href")
-				$("#settingpng").attr("src","img/local/setting-blur.png")
-			} catch(error) {
-				alert('logout: ' + error.response.data.message)
+<script>
+	let items = [];
+	fetch('/api/products/')
+		.then(res => res.json())
+		.then(data => {
+			items = data;
+		})
+		.catch(error => console.error('Error fetching products:', error));
+
+	initCart()
+	closeCart()
+
+	//Count Sun total
+	function subTotal(qty, price) {
+		return qty * price
+	}
+
+	//show Cart
+	function showCart(){
+		let idName = document.getElementById('cart-container').classList.add('show');
+	}
+
+	// Hide Cart
+	function closeCart() {
+		document.getElementById('cart-container').classList.remove('show');
+		console.log('Cart hidden');
+	}
+
+	// add Cart
+	async function saveToLocalStore() {
+		try {
+			const response = await axios.get('/api/sessions');
+			const loggedin = response.data.isLoggedIn;
+
+			if (loggedin) {
+				const user = response.data.name;
+				const cartForm = document.getElementById("cartForm");
+				const size = displayedSKU.Unit[cartForm.size.value].size;
+				const name = productData.name;
+				const qty = parseInt(cartForm.quantity.value);
+				const image = displayedSKU.image[0];
+				const price = productData.price;
+
+				checkCart(user,size,qty,name,image,price);
+
+			} else {
+				alert('Please log in before purchase');
 			}
+		} catch (error) {
+			alert('System problem is encountered, please try later');
+		}finally{
+			document.getElementById('itemCount').innerHTML = localStorage.length
 		}
-		async function inactivate() {
-			try {
-				const response = await axios.delete('/api/users')
-				const name = response.data.name;
-				document.getElementById("main").classList.remove("container")
-				document.getElementById("main").innerHTML = `<h1 style="margin: 45px 10px;">Inactivate<h1><h2>You (${name}) have successfully inactivated your login<h2>`
-				document.getElementById("main").style.height = "300px"
-				document.getElementById("main").style.textAlign = "center"
-				$("#beforelogin").show()
-				$("#afterlogin").hide()
-				$("#setting").removeAttr("href")
-				$("#settingpng").attr("src","img/local/setting-blur.png")
-			} catch(error) {
-				alert('inactivate: ' + error.response.data.message)
+	}
+
+	// Get local storge items
+
+	function checkCart(user,size,qty,name,image,price) {
+		
+		let localStoreObj = localStorage.getItem(`${name}${image}${size}`);
+		let newItem = []
+		if(localStoreObj === null){
+			let invoice = {
+				"user": user,
+				"name":name,
+				"size":size,
+				"qty":qty,
+				"image":image,
+				"subTotal":subTotal(qty, price)
 			}
+			// console.log('invoice',invoice)
+			let saveToLocalStore = JSON.stringify(invoice)
+			localStorage.setItem(`${name}${image}${size}`,saveToLocalStore)
+			newItem.push(renderCartItem(invoice))
+		}else{
+			let updateObj = JSON.parse(localStoreObj)		
+			updateObj.qty += qty;
+			let saveTolocal = JSON.stringify(updateObj)
+			localStorage.setItem(`${name}${image}${size}`,saveTolocal)
+			newItem.push(renderCartItem(updateObj))
 		}
-		async function checksession() {
-			try {
-				const response = await axios.get('/api/sessions')
-				const loggedin = response.data.loggedin;
-				if (loggedin) {
-					$("#beforelogin").hide()
-					$("#afterlogin").show()
-					$("#setting").attr("href","/profile.html")
-					$("#settingpng").attr("src","img/local/setting.png")
-				} else {
-					$("#beforelogin").show()
-					$("#afterlogin").hide()
-					$("#setting").removeAttr("href")
-					$("#settingpng").attr("src","img/local/setting-blur.png")
-				}
-			} catch(error) {
-				alert('checksession: ' + error.response.data.message)
+		document.getElementById('cart').innerHTML = newItem.join('')
+		renderCartItem(newItem)
+	}
+
+	//form Cart Items
+	function renderCartItem(item) {
+    return `
+        <div class="cartItem" id="${item.name}-${item.size}">
+            <img src="${item.image}">
+            <div class="info">
+                <h6>${item.name}</h6>
+                <h6>Size: ${item.size}</h6>
+                <h6 id="qty">Qty: ${item.qty}</h6>
+				<h6>Sub-Total $${item.subTotal}</h6>
+            </div>
+        </div>
+    `;
+	}
+
+	//init Cart
+	function initCart() {
+    let msg = '';
+    if (localStorage.length === 0) {
+        msg = `
+			<div>
+				<p>Don't have item yet.</p>
+			</div>
+        `;
+    } else {
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            let item = JSON.parse(localStorage.getItem(key));
+            msg += renderCartItem(item);
+        }
+
+        msg += `
+            <button id="checkOut"onclick="checkOut()">Check Out</button>
+        `;
+    }
+	
+    document.getElementById('cart').innerHTML = msg;
+	document.getElementById('itemCount').innerHTML = localStorage.length
+	}
+
+	//
+	async function logout() {
+		try {
+			const response = await axios.delete('/api/sessions')
+			const name = response.data.name;
+			document.getElementById("main").classList.remove("container")
+			document.getElementById("main").innerHTML = `<h1 style="margin: 45px 10px;">Logout<h1><h2>You (${name}) have successfully logged out<h2>`
+			document.getElementById("main").style.height = "520px"
+			document.getElementById("main").style.textAlign = "center"
+			$("#beforelogin").show()
+			$("#afterlogin").hide()
+			$("#setting").removeAttr("href")
+			// $("#settingpng").attr("src","/img/local/setting-blur.png")
+			$("#admin").hide()
+			setTimeout(function () {
+				window.location.href = "/index.html";
+			}, 2000);
+		} catch (error) {
+			alert('logout: ' + error.response.data.message)
+		}
+	}
+
+	async function inactivate() {
+		try {
+			const response = await axios.delete('/api/users')
+			const name = response.data.name;
+			document.getElementById("main").classList.remove("container")
+			document.getElementById("main").innerHTML = `<h1 style="margin: 45px 10px;">Inactivate<h1><h2>You (${name}) have successfully inactivated your login<h2>`
+			document.getElementById("main").style.height = "520px"
+			document.getElementById("main").style.textAlign = "center"
+			$("#beforelogin").show()
+			$("#afterlogin").hide()
+			$("#setting").removeAttr("href")
+			// $("#settingpng").attr("src","/img/local/setting-blur.png")
+			$("#admin").hide()
+			setTimeout(function () {
+				window.location.href = "/index.html";
+			}, 2000);
+		} catch (error) {
+			alert('inactivate: ' + error.response.data.message)
+		}
+	}
+
+	//Check Login
+	async function checksession() {
+		try {
+			const response = await axios.get('/api/sessions')
+			// console.log('session: ' + response.data.isLoggedIn + ' | ' + response.data.name)
+			const loggedin = response.data.isLoggedIn;
+			if (loggedin) {
 				$("#beforelogin").hide()
 				$("#afterlogin").show()
-				$("#setting").attr("href","/profile.html")
-				$("#settingpng").attr("src","img/local/setting.png")
+				$("#setting").attr("href", "/profile.html")
+				$("#settingpng").attr("src", "/img/local/setting.png")
+				if (response.data.name == 'admin') {
+					$("#admin").show()
+				} else {
+					$("#admin").hide()
+				}
+			} else {
+				$("#beforelogin").show()
+				$("#afterlogin").hide()
+				$("#setting").removeAttr("href")
+				// $("#settingpng").attr("src","/img/local/setting-blur.png")
+				$("#admin").hide()
 			}
+		} catch (error) {
+			alert('checksession: ' + error.response.data.message)
+			$("#beforelogin").hide()
+			$("#afterlogin").show()
+			$("#setting").attr("href", "/profile.html")
+			$("#settingpng").attr("src", "/img/local/setting.png")
+			$("#admin").hide()
 		}
+	}
+	let showDropdown = document.getElementById('dropdown-container')
+	//get Item Category
+	function getCommon(type) {
+	
+    let record = {};
+    let result = [];
 
-		$(document).ready(function() {
-			$(".mobile ul").hide();
-			$(".burger").on("click",function(){
-				$(".burger img").toggle();
-				$(".mobile ul").slideToggle();
-			})
-			// console.log('inc_header doc ready')
-			// checksession()
-		 });
+    for (let i = 0; i < items.length; i++) {
+        if (items[i].category === type) {
+            if (!result.includes(items[i].type)) {
+				result = result.map(type => type.charAt(0).toUpperCase() + type.slice(1));
+                result.push(items[i].type);
+                record[items[i].type] = true;
+            }
+        }
+    }
 
-	</script>
+    // Create dropdown
+	let dropdownResult = [];
+    for (let k = 0; k < result.length; k++) {
+       let dropdownType = `
+            <div class="dropdown-type"><a href="/category.html?categories=${result[k].toLowerCase()}">${result[k]}</a></div>
+        `;
+		dropdownResult.push(dropdownType)
+		
+    }
+	showDropdown.classList.add('show')
+	showDropdown.innerHTML = dropdownResult.join(" ");
+}
+
+	//close dropdown
+	function closeDropdown(){
+		showDropdown.classList.remove('show')
+	}
+
+	
+	$(document).ready(function () {
+		$(".mobile ul").hide();
+		$(".burger").on("click", function () {
+			$(".burger img").toggle();
+			$(".mobile ul").slideToggle();
+		})
+		checksession()
+	});
+
+</script>
